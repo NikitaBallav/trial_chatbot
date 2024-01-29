@@ -1,0 +1,258 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: itir_query_q1
+  examples: |
+    - What is the meaning of charitable purpose?
+    - What is the meaning of charitable purpose?
+
+- intent: itir_query_q2
+  examples: |
+    - When shall the advancement of any other object of general public utility not be treated as a charitable purpose?
+    - When shall the advancement of any other object of general public utility not be treated as a charitable purpose?
+
+- intent: itir_query_q3
+  examples: |
+    - What is the validity period of a registration obtained under Section 12AB?
+    - What is the validity period of a registration obtained under Section 12AB?
+
+- intent: itir_query_q4
+  examples: |
+    - Which form is required to file for the conversion of provisional registration into regular registration?
+    - Which form is required to file for the conversion of provisional registration into regular registration?
+
+- intent: itir_query_q5
+  examples: |
+    - When the registration of the trust shall become inoperative?
+    - When the registration of the trust shall become inoperative?
+
+- intent: itir_query_q6
+  examples: |
+    - What is the validity period of provisional registration?
+    - What is the validity period of provisional registration?
+
+- intent: itir_query_q7
+  examples: |
+    - When can a trust or institution apply for direct regular registration?
+    - When can a trust or institution apply for direct regular registration?
+
+- intent: itir_query_q8
+  examples: |
+    - When is the maintenance of books of account mandatory for a trust?
+    - When is the maintenance of books of account mandatory for a trust?
+
+- intent: itir_query_q9
+  examples: |
+    - What is the time period defined to keep and maintain books of account and other documents?
+    - What is the time period defined to keep and maintain books of account and other documents?
+
+- intent: itir_query_q10
+  examples: |
+    - When are books of accounts required to be audited?
+    - When are books of accounts required to be audited?
+
+- intent: itir_query_q11
+  examples: |
+    - What is the due date for the submission of an audit report by a trust?
+    - What is the due date for the submission of an audit report by a trust?
+
+- intent: itir_query_q12
+  examples: |
+    - Who is required to file an audit report in Form 10B?
+    - Who is required to file an audit report in Form 10B?
+
+- intent: itir_query_q13
+  examples: |
+    - Who is required to file an audit report in Form 10BB?
+    - Who is required to file an audit report in Form 10BB?
+
+- intent: itir_query_q14
+  examples: |
+    - When is the filing of a return of income mandatory for a trust?
+    - When is the filing of a return of income mandatory for a trust?
+
+- intent: itir_query_q15
+  examples: |
+    - What is the provision for the accumulation of income?
+    - What is the provision for the accumulation of income?
+
+- intent: itir_query_q16
+  examples: |
+    - When is a trust required to file Form 10?
+    - When is a trust required to file Form 10?
+
+- intent: itir_query_q17
+  examples: |
+    - When is a trust required to file Form 9A?
+    - When is a trust required to file Form 9A?
+
+- intent: itir_query_q18
+  examples: |
+    - What are the permissible modes for investment or deposit under Section 11(5) read with Rule 17C?
+    - What are the permissible modes for investment or deposit under Section 11(5) read with Rule 17C?
+
+- intent: itir_query_q19
+  examples: |
+    - What is the provision for the treatment of corpus donation?
+    - What is the provision for the treatment of corpus donation?
+
+- intent: itir_query_q20
+  examples: |
+    - What is the meaning of an anonymous donation?
+    - What is the meaning of an anonymous donation?
+
+- intent: itir_query_q21
+  examples: |
+    - What is the taxability of an anonymous donation?
+    - What is the taxability of an anonymous donation?
+
+- intent: itir_query_q22
+  examples: |
+    - When does the provision of accreted income apply?
+    - When does the provision of accreted income apply?
+
+- intent: itir_query_q23
+  examples: |
+    - When is a specified trust or institution deemed to be converted?
+    - When is a specified trust or institution deemed to be converted?
+
+- intent: itir_query_q24
+  examples: |
+    - How to calculate accreted income?
+    - How to calculate accreted income?
+
+- intent: itir_query_q25
+  examples: |
+    - What is the specified date for the purpose of the calculation of accreted income?
+    - What is the specified date for the purpose of the calculation of accreted income?
+
+- intent: itir_query_q26
+  examples: |
+    - What is the tax rate applicable to accreted income?
+    - What is the tax rate applicable to accreted income?
+
+- intent: itir_query_q27
+  examples: |
+    - What is the provision for Section 115BBI?
+    - What is the provision for Section 115BBI?
+
+- intent: itir_query_q28
+  examples: |
+    - What are the specified violations when the registration of a trust can be canceled?
+    - What are the specified violations when the registration of a trust can be canceled?
+
+- intent: itir_query_q29
+  examples: |
+    - What are the consequences of the cancellation of registration?
+    - What are the consequences of the cancellation of registration?
+
+- intent: itir_query_q30
+  examples: |
+    - Under which circumstances will an exemption of Sections 11 and 12 be withdrawn?
+    - Under which circumstances will an exemption of Sections 11 and 12 be withdrawn?
+
+- intent: itir_query_q31
+  examples: |
+    - Which persons are treated as interested persons?
+    - Which persons are treated as interested persons?
+
+- intent: itir_query_q32
+  examples: |
+    - What is the meaning of substantial interest?
+    - What is the meaning of substantial interest?
+
+- intent: itir_query_q33
+  examples: |
+    - When is an Interested Person deemed to be benefited?
+    - When is an Interested Person deemed to be benefited?
+
+
