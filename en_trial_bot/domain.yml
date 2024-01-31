@@ -1,0 +1,206 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - itir_query_q1
+  - itir_query_q2
+  - itir_query_q3
+  - itir_query_q4
+  - itir_query_q5
+  - itir_query_q6
+  - itir_query_q7
+  - itir_query_q8
+  - itir_query_q9
+  - itir_query_q10
+  - itir_query_q11
+  - itir_query_q12
+  - itir_query_q13
+  - itir_query_q14
+  - itir_query_q15
+  - itir_query_q16
+  - itir_query_q17
+  - itir_query_q18
+  - itir_query_q19
+  - itir_query_q20
+  - itir_query_q21
+  - itir_query_q22
+  - itir_query_q23
+  - itir_query_q24
+  - itir_query_q25
+  - itir_query_q26
+  - itir_query_q27
+  - itir_query_q28
+  - itir_query_q29
+  - itir_query_q30
+  - itir_query_q31
+  - itir_query_q32
+  - itir_query_q33
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_answer_q1
+  - utter_answer_q2
+  - utter_answer_q3
+  - utter_answer_q4
+  - utter_answer_q5
+  - utter_answer_q6
+  - utter_answer_q7
+  - utter_answer_q8
+  - utter_answer_q9
+  - utter_answer_q10
+  - utter_answer_q11
+  - utter_answer_q12
+  - utter_answer_q13
+  - utter_answer_q14
+  - utter_answer_q15
+  - utter_answer_q16
+  - utter_answer_q17
+  - utter_answer_q18
+  - utter_answer_q19
+  - utter_answer_q20
+  - utter_answer_q21
+  - utter_answer_q22
+  - utter_answer_q23
+  - utter_answer_q24
+  - utter_answer_q25
+  - utter_answer_q26
+  - utter_answer_q27
+  - utter_answer_q28
+  - utter_answer_q29
+  - utter_answer_q30
+  - utter_answer_q31
+  - utter_answer_q32
+  - utter_answer_q33
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_answer_q1:
+  - text: "Section 2(15) of the Income-tax Act defines 'charitable purpose,' including relief of the poor, education, yoga, medical relief, environmental preservation, preservation of monuments, and objects of general public utility."
+
+  utter_answer_q2:
+  - text: "Advancing general public utility is not charitable if it involves trade, commerce, or business, except if it's part of the actual advancement, and receipts don't exceed 20% of total trust receipts."
+
+  utter_answer_q3:
+  - text: "Registration under Section 12AB is valid for 5 years."
+
+  utter_answer_q4:
+  - text: "Provisionally registered trusts convert to normal registration using Form 10AB within 6 months of provisional registration expiry or within 6 months of starting activities."
+
+  utter_answer_q5:
+  - text: "Section 12AB registration becomes inoperative if approved under other sections or notified under specified sections."
+
+  utter_answer_q6:
+  - text: "Provisional registration is valid for 3 years. Conversion to regular registration requires Form 10AB."
+
+  utter_answer_q7:
+  - text: "Trusts, from 01-10-2023, directly apply for regular registration if activities started, and no income was excluded under specified sections."
+
+  utter_answer_q8:
+  - text: "Trusts with income exceeding the non-taxable limit must maintain books of accounts."
+
+  utter_answer_q9:
+  - text: "Keep books for 10 years from the end of the relevant assessment year."
+
+  utter_answer_q10:
+  - text: "Audited if total income before exemption exceeds non-taxable limit; audit report (Form 10B) due one month before the income return."
+
+  utter_answer_q11:
+  - text: "Trusts under specified conditions file audit report in Form 10B."
+
+  utter_answer_q12:
+  - text: "File audit report in Form 10B if total income exceeds Rs. 5 crores, received foreign contribution, or applied income outside India."
+
+  utter_answer_q13:
+  - text: "File Form 10BB if total income is up to Rs. 5 crores, no foreign contribution received, and no income applied outside India."
+
+  utter_answer_q14:
+  - text: "Entities under Section 12AB file income return if total income exceeds non-taxable limit."
+
+  utter_answer_q15:
+  - text: "Accumulate 15% income indefinitely for charitable/religious purposes, invested in specified forms."
+
+  utter_answer_q16:
+  - text: "Unutilized 85% income can be accumulated for 5 years; inform assessing officer via Form 10."
+
+  utter_answer_q17:
+  - text: "Deemed application in certain situations; details submitted electronically via Form 9A."
+
+  utter_answer_q18:
+  - text: "Permissible investment modes for trust funds listed in Section 11(5)."
+
+  utter_answer_q19:
+  - text: "Corpus donations not included in total income; invest in specified forms."
+
+  utter_answer_q20:
+  - text: "Anonymous donations taxable if exceeding Rs. 1 lakh or 5% of total donations received."
+
+  utter_answer_q21:
+  - text: "Tax on accreted income for trust conversion or merger; dissolution within 12 months."
+
+  utter_answer_q22:
+  - text: "Conversion to non-eligible form leads to deemed conversion; apply for fresh registration if objects modified."
+
+  utter_answer_q23:
+  - text: "Accreted income calculation:- FMV of assets minus total liability on specified date."
+
+  utter_answer_q25:
+  - text: "Specified date:- order of registration cancellation, date of object modification, last date for fresh registration, date of merger or dissolution."
+
+  utter_answer_q26:
+  - text: "Tax on accreted income at maximum marginal rate, plus 1% interest/month for late payment."
+
+  utter_answer_q27:
+  - text: "Exemption under Section 11 lost if income not applied for charitable/religious purposes in India."
+
+  utter_answer_q28:
+  - text: "Specified violations leading to cancellation, including non-genuine activities."
+
+  utter_answer_q29:
+  - text: "Consequences of registration cancellation:- loss of exemptions, normal income tax, 115BBI tax, 80G approval."
+
+  utter_answer_q30:
+  - text: "Exemptions lost if Section 13 violated; trust fund misuse, improper beneficiaries, impermissible modes."
+
+  utter_answer_q31:
+  - text: "Interested persons include trust founders, substantial contributors, trustees, relatives, or persons with a substantial interest."
+
+  utter_answer_q32:
+  - text: "Substantial interest in a concern:- 20% equity or 20% of profits."
+
+  utter_answer_q33:
+  - text: "Income deemed applied for an interested person in various cases like low-interest loans, inadequate rent, excess salary, and more."
+
+ 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
