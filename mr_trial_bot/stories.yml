@@ -1,0 +1,157 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: greet path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itir_query_q1
+  - action: utter_answer_q1
+  - action: utter_did_that_help
+
+- story: non greet path 1
+  steps:
+  - intent: itir_query_q1
+  - action: utter_answer_q1
+  - action: utter_did_that_help
+
+- story: greet path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itir_query_q2
+  - action: utter_answer_q2
+  - action: utter_did_that_help
+
+- story: non greet path 2
+  steps:
+  - intent: itir_query_q2
+  - action: utter_answer_q2
+  - action: utter_did_that_help
+
+- story: greet path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itir_query_q3
+  - action: utter_answer_q3
+  - action: utter_did_that_help
+
+- story: non greet path 3
+  steps:
+  - intent: itir_query_q3
+  - action: utter_answer_q3
+  - action: utter_did_that_help
+
+- story: greet path 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itir_query_q4
+  - action: utter_answer_q4
+  - action: utter_did_that_help
+
+- story: non greet path 4
+  steps:
+  - intent: itir_query_q4
+  - action: utter_answer_q4
+  - action: utter_did_that_help
+
+- story: greet path 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itir_query_q5
+  - action: utter_answer_q5
+  - action: utter_did_that_help
+
+- story: non greet path 5
+  steps:
+  - intent: itir_query_q5
+  - action: utter_answer_q5
+  - action: utter_did_that_help
+
+- story: greet path 6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itir_query_q6
+  - action: utter_answer_q6
+  - action: utter_did_that_help
+
+- story: non greet path 6
+  steps:
+  - intent: itir_query_q6
+  - action: utter_answer_q6
+  - action: utter_did_that_help
+
+- story: greet path 7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itir_query_q7
+  - action: utter_answer_q7
+  - action: utter_did_that_help
+
+- story: non greet path 7
+  steps:
+  - intent: itir_query_q7
+  - action: utter_answer_q7
+  - action: utter_did_that_help
+
+- story: greet path 8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itir_query_q8
+  - action: utter_answer_q8
+  - action: utter_did_that_help
+
+- story: non greet path 8
+  steps:
+  - intent: itir_query_q8
+  - action: utter_answer_q8
+  - action: utter_did_that_help
+
+- story: greet path 9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itir_query_q9
+  - action: utter_answer_q9
+  - action: utter_did_that_help
+
+- story: non greet path 9
+  steps:
+  - intent: itir_query_q9
+  - action: utter_answer_q9
+  - action: utter_did_that_help
+
+- story: greet path 10
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itir_query_q10
+  - action: utter_answer_q10
+  - action: utter_did_that_help
+
+- story: non greet path 10
+  steps:
+  - intent: itir_query_q10
+  - action: utter_answer_q10
+  - action: utter_did_that_help
