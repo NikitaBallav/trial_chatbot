@@ -1,0 +1,80 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: path q1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: q1
+  - action: utter_ans1
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: path q2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: q2
+  - action: utter_ans2
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: path q3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: q3
+  - action: utter_ans3
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: path q4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: q4
+  - action: utter_ans4
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: path q5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: q5
+  - action: utter_ans5
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye

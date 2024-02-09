@@ -1,0 +1,136 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: q1
+  examples: |
+    - How do I apply for the Maharashtra scholarship program?
+    - What is the procedure for submitting an application for the Maharashtra scholarship program?
+    - Can you guide me through the steps of applying for the Maharashtra scholarship?
+    - What are the application submission requirements for the Maharashtra scholarship program?
+    - Is there an online application process for the Maharashtra scholarship, and if so, how can I access it?
+    - Could you provide information on where and how to fill out the application form for the Maharashtra scholarship?
+
+- intent: q2
+  examples: |
+    - What are the eligibility criteria for the Maharashtra scholarship?
+    - Can you clarify the specific requirements that applicants must meet to be eligible for the Maharashtra scholarship?
+    - What factors determine eligibility for the Maharashtra scholarship program?
+    - Are there any academic or financial criteria that applicants need to satisfy for the Maharashtra scholarship?
+    - Could you explain the eligibility conditions for different categories of the Maharashtra scholarship?
+    - Where can I find detailed information on who qualifies for the Maharashtra scholarship?
+
+- intent: q3
+  examples: |
+    - What types of scholarships are available, and who qualifies for each?
+    - Can you provide details on the different categories of scholarships offered under the Maharashtra program and their respective eligibility criteria?
+    - What are the specific scholarship options available within the Maharashtra scholarship program?
+    - Could you elaborate on the criteria that determine eligibility for each type of scholarship in Maharashtra?
+    - Is there a list of available scholarships, and how can I determine which ones I qualify for?
+    - Where can I find information on the specific qualifications needed for each scholarship category within the Maharashtra program?
+
+- intent: q4
+  examples: |
+    - When will the scholarship results be announced, and how will I be notified?
+    - Can you provide an estimated timeline for the release of Maharashtra scholarship results?
+    - How and when will successful applicants be informed about the Maharashtra scholarship results?
+    - Is there a specific date for announcing the Maharashtra scholarship outcomes, and how can I stay updated?
+    - What communication channels are used to notify applicants about the Maharashtra scholarship results?
+    - Could you guide me on where to check for updates on the Maharashtra scholarship result announcement?
+
+- intent: q5
+  examples: |
+    - Are there any support services available for applicants who need assistance with the application process?
+    - What assistance services are in place to help applicants with the Maharashtra scholarship application process?
+    - Can you provide information on available support for those facing challenges during the Maharashtra scholarship application?
+    - Are there helplines or support centers that applicants can contact for help with the Maharashtra scholarship application?
+    - How can individuals seeking guidance access assistance for navigating the Maharashtra scholarship application?
+    - Could you elaborate on the resources available to applicants who require additional support throughout the Maharashtra scholarship application process?

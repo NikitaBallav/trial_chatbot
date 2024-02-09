@@ -1,0 +1,68 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - q1
+  - q2
+  - q3
+  - q4
+  - q5
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_ans1
+  - utter_ans2
+  - utter_ans3
+  - utter_ans4
+  - utter_ans5
+  - action_message
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ans1:
+  - text: To apply for the Maharashtra scholarship program, you can visit the official website and navigate to the "Scholarship" section. Follow the instructions provided on the portal to complete the online application form. Ensure you have all the required documents ready, and submit the application within the specified deadline.
+
+  utter_ans2:
+  - text: Visit the official Maharashtra scholarship website or refer to the program guidelines for detailed eligibility criteria. Requirements may include academic performance, family income, and category-specific criteria.
+
+  utter_ans3:
+  - text: Explore the official Maharashtra scholarship portal for information on available scholarship types. Specific eligibility criteria for each category, such as merit-based or income-based scholarships, can be found in the program guidelines.
+
+  utter_ans4:
+  - text: Stay informed about result announcements by regularly checking the official Maharashtra scholarship website. Notification details, including the publication date and result access methods, will be available on the portal.
+
+  utter_ans5:
+  - text: Yes, the Maharashtra scholarship program offers support services. Check the official website for helpline or support center details. Guidelines and FAQs on the portal can also provide assistance for common application-related queries.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
