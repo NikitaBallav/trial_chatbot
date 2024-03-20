@@ -2,86 +2,83 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
+- story: path 1
   steps:
   - user: |
       hello there!
     intent: greet
-  - action: utter_greet
+  - action: action_greet_db
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      where is government central press?
+    intent: q7
+  - action: action_ans7_db
 
-- story: happy path 2
-  steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
-
-- story: sad path 1
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
-
-- story: sad path 3
+- story: path 2
   steps:
   - user: |
       hi
     intent: greet
-  - action: utter_greet
+  - action: action_greet_db
   - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      Who is the Director of Government Printing, Stationery, and Publications in Maharashtra State?
+    intent: q5
+  - action: action_ans5_db
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: action_goodbye_db
+
+- story: path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: action_greet_db
+  - user: |
+      State the powers and duties of revenue officers.
+    intent: q12
+  - action: action_ans12_db
+  - user: |
+      ok
+    intent: affirm
+  - action: action_happy_db
+
+- story: path 4
+  steps:
+  - user: |
+      good morning
+    intent: greet
+  - action: action_greet_db
+  - user: |
+      what is procedures for an officer or person in jail to obtain their release? 
+    intent: q15
+  - action: action_ans15_db
+  - user: |
+      not really
+    intent: deny
+  - action: action_sorry_db
+
+- story: path 5
+  steps:
+  - user: |
+      hey
+    intent: greet
+  - action: action_greet_db
+  - user: |
+      what are the rights an individual have for the trees on their land?
+    intent: q22
+  - action: action_ans22_db
   - user: |
       no
     intent: deny
-  - action: utter_goodbye
+  - action: action_sorry_db
 
 - story: say goodbye
   steps:
   - user: |
-      bye-bye!
+      have a good day
     intent: goodbye
-  - action: utter_goodbye
+  - action: action_goodbye_db
 
 - story: bot challenge
   steps:
@@ -89,3 +86,46 @@ stories:
       are you a bot?
     intent: bot_challenge
   - action: utter_iamabot
+
+- story: path 6
+  steps:
+  - user: |
+      what is the temporary right to alluvial lands of minor size?
+    intent: q28
+  - action: action_ans28_db
+
+- story: path 7
+  steps:
+  - user: |
+      what is maharashtra land revenue code 1966 and how it governs?
+    intent: q40
+  - action: action_ans40_db
+
+
+- story: path 8
+  steps:
+  - user: |
+      what is the power of the collector in determining the standard rate for non-agricultural assessment?
+    intent: q52
+  - action: action_ans52_db
+
+- story: path 9
+  steps:
+  - user: |
+      provide the key sections of the code that cover the boundary demarcation.
+    intent: q59
+  - action: action_ans59_db
+
+- story: path 10
+  steps:
+  - user: |
+      outline the informing authorities about land transfers
+    intent: q66
+  - action: action_ans66_db
+
+- story: path 11
+  steps:
+  - user: |
+      What are the possible outcomes if a village or estate, which has been attached by the State Government, is not redeemed within a twelve-year period, as stated in Section 190?
+    intent: q76
+  - action: action_ans76_db
