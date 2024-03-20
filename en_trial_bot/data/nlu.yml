@@ -32,12 +32,15 @@ nlu:
 
 - intent: affirm
   examples: |
-    - yes
-    - y
     - indeed
     - of course
     - that sounds good
     - correct
+    - alright
+    - ok
+    - oh, i see
+    - ok, i got that
+
 
 - intent: deny
   examples: |
@@ -49,210 +52,731 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+   
 
-- intent: itir_query_q1
+- intent: q1
   examples: |
-    - What is the meaning of charitable purpose?
-    - What is the meaning of charitable purpose?
+    - What is the title of the government act mentioned in this webpage?
+    - What is the title of the legislation mentioned on this webpage?
+    - Can you determine the name of the government statute discussed in this content?
+    - What is the official title of the law highlighted on this page?
+    - Could you supply the name of the act referenced in this webpage?
+    - What is the governmental regulation mentioned in this article?
 
-- intent: itir_query_q2
+- intent: q2
   examples: |
-    - When shall the advancement of any other object of general public utility not be treated as a charitable purpose?
-    - When shall the advancement of any other object of general public utility not be treated as a charitable purpose?
+    - In which year was the Maharashtra Land Revenue Code, 1966 enacted?
+    - In what year was the Maharashtra Land Revenue Code of 1966 passed into law?
+    - When was the Maharashtra Land Revenue Code of 1966 officially enacted?
+    - What was the year of enactment for the Maharashtra Land Revenue Code of 1966?During which year was the Maharashtra Land Revenue Code, 1966 brought into force?
+    - Can you provide the year when the Maharashtra Land Revenue Code, 1966, came into effect?
 
-- intent: itir_query_q3
+
+- intent: q3
   examples: |
-    - What is the validity period of a registration obtained under Section 12AB?
-    - What is the validity period of a registration obtained under Section 12AB?
+    - When was the act last modified?
+    - What is the most recent modification date of the act?
+    - When was the act last amended?
+    - Can you provide the date of the latest revision to the act?
+    - What is the date of the last update to the act?
+    - When was the most recent change made to the act?
 
-- intent: itir_query_q4
+
+- intent: q4
   examples: |
-    - Which form is required to file for the conversion of provisional registration into regular registration?
-    - Which form is required to file for the conversion of provisional registration into regular registration?
+    - Who is responsible for printing the act in India?
+    - Who is the official printer of the act in India?
+    - Which entity is tasked with printing the act within India?
+    - Who holds the responsibility for printing the act in the country?
+    - Can you identify the organization responsible for printing the act in India?
+    - Which authority is in charge of printing the act in India?
 
-- intent: itir_query_q5
+
+- intent: q5
   examples: |
-    - When the registration of the trust shall become inoperative?
-    - When the registration of the trust shall become inoperative?
+    - Who is the Director of Government Printing, Stationery, and Publications in Maharashtra State?
+    - Who currently occupies the role of Director for Government Printing, Stationery, and Publications in Maharashtra?
+    - Can you provide the name of the current Director for Government Printing, Stationery, and Publications in Maharashtra?
+    - Who is presently serving as the Director for Government Printing, Stationery, and Publications in Maharashtra?
+    - Could you tell me the name of the individual currently holding the position of Director for Government Printing, Stationery, and Publications in Maharashtra?
+    - Who is the current Director of Government Printing, Stationery, and Publications in Maharashtra State?
 
-- intent: itir_query_q6
+
+- intent: q6
   examples: |
-    - What is the validity period of provisional registration?
-    - What is the validity period of provisional registration?
+    - What is the price of the printed copy of the act mentioned?
+    - How much does it cost to buy a printed version of the act?
+    - What is the price of acquiring a hard copy of the act?
+    - How much does the printed edition of the act cost?
+    - What is the expense associated with obtaining a physical copy of the act?
+    - How expensive is it to purchase a printed copy of the act?
 
-- intent: itir_query_q7
+- intent: q7
   examples: |
-    - When can a trust or institution apply for direct regular registration?
-    - When can a trust or institution apply for direct regular registration?
+    - Where is the Government Central Press located?
+    - What is the address of the Government Central Press?
+    - Can you provide the location details of the Government Central Press?
+    - Where can the Government Central Press be found?
+    - What is the physical location of the Government Central Press?
+    - Could you give the whereabouts of the Government Central Press?
 
-- intent: itir_query_q8
+- intent: q8
   examples: |
-    - When is the maintenance of books of account mandatory for a trust?
-    - When is the maintenance of books of account mandatory for a trust?
+    - What department does the Maharashtra Act No. XLI of 1966 fall under?
+    - Under which department does Maharashtra Act No. XLI of 1966 operate?
+    - To which department does Maharashtra Act No. XLI of 1966 belong?
+    - What is the departmental affiliation of Maharashtra Act No. XLI of 1966?
+    - Which governmental department oversees Maharashtra Act No. XLI of 1966?
+    - In which department does Maharashtra Act No. XLI of 1966 fall under?
 
-- intent: itir_query_q9
+- intent: q9
   examples: |
-    - What is the time period defined to keep and maintain books of account and other documents?
-    - What is the time period defined to keep and maintain books of account and other documents?
+    - What is the purpose of the Maharashtra Land Revenue Code, 1966?
+    - What is the objective of enacting the Maharashtra Land Revenue Code in 1966?
+    - What was the intended purpose behind introducing the Maharashtra Land Revenue Code in 1966?
+    - For what reason was the Maharashtra Land Revenue Code of 1966 implemented?
+    - What is the primary goal of the Maharashtra Land Revenue Code from 1966?
+    - What was the main aim behind formulating the Maharashtra Land Revenue Code in 1966?
 
-- intent: itir_query_q10
+- intent: q10
   examples: |
-    - When are books of accounts required to be audited?
-    - When are books of accounts required to be audited?
+    - How can individuals access a copy of the act for reference?
+    - What are the methods available for individuals to obtain a copy of the act for reference?
+    - How can individuals access a copy of the act for their reference purposes?
+    - What are the available options for individuals to procure a copy of the act for their perusal?
+    - In what ways can individuals obtain a copy of the act to refer to?
+    - How do individuals have access to a copy of the act for their reference needs?
 
-- intent: itir_query_q11
+- intent: q11
   examples: |
-    - What is the due date for the submission of an audit report by a trust?
-    - What is the due date for the submission of an audit report by a trust?
+    - How is the State divided into revenue areas according to the Maharashtra Land Revenue Code, 1966?
+    - According to the Maharashtra Land Revenue Code, 1966, how is the State divided into revenue areas?
+    - What is the method of division of the State into revenue areas as per the Maharashtra Land Revenue Code, 1966?
+    - In accordance with the Maharashtra Land Revenue Code, 1966, how are the revenue areas in the State delineated?
+    - What criteria are utilized for dividing the State into revenue areas as specified in the Maharashtra Land Revenue Code, 1966?
+    - How does the Maharashtra Land Revenue Code, 1966, outline the process of dividing the State into revenue areas?
 
-- intent: itir_query_q12
+- intent: q12
   examples: |
-    - Who is required to file an audit report in Form 10B?
-    - Who is required to file an audit report in Form 10B?
+    - What are the powers and duties of revenue officers?
+    - What responsibilities and authorities are vested in revenue officers?
+    - Can you elaborate on the powers and obligations of revenue officers?
+    - What roles and responsibilities do revenue officers possess?
+    - what are the specific powers and duties assigned to revenue officers?
+    - state the powers and duties of revenue officers.
 
-- intent: itir_query_q13
+- intent: q13
   examples: |
-    - Who is required to file an audit report in Form 10BB?
-    - Who is required to file an audit report in Form 10BB?
+    - How can public moneys be recovered according to the provisions of the code?
+    - What methods are outlined in the code for the recovery of public funds?
+    - According to the provisions of the code, what procedures are in place for the recovery of public funds?
+    - How does the code specify the process for recovering public money?
+    - What are the prescribed procedures for the recovery of public moneys under the code?
+    - In accordance with the code, what steps are taken to recover public funds?
 
-- intent: itir_query_q14
+- intent: q14
   examples: |
-    - When is the filing of a return of income mandatory for a trust?
-    - When is the filing of a return of income mandatory for a trust?
+    - What is the title of the State in all lands, public roads, etc., as stated in the code?
+    - What is the official designation of the State with regard to all lands and public roads, as specified in the code?
+    - According to the code, what is the title of the State concerning all lands and public roads?
+    - What title does the State hold in relation to all lands and public roads, as outlined in the code?
+    - How is the State formally designated with respect to all lands and public roads, as articulated in the code?
+    - What is the legal status of the State concerning all lands and public roads, as per the code?
 
-- intent: itir_query_q15
+- intent: q15
   examples: |
-    - What is the provision for the accumulation of income?
-    - What is the provision for the accumulation of income?
+    - How can an officer or person in jail secure their release?
+    - what procedures are available for an officer or individual in jail to obtain their release?
+    - What are the available methods for an officer or person in jail to secure their release under the code?
+    - How can an officer or individual in jail seek their release in accordance with the code?
+    - What options does an officer or person in jail have to obtain their release?
+    - What are the prescribed procedures for securing release for an officer or person in jail?
 
-- intent: itir_query_q16
+- intent: q16
   examples: |
-    - When is a trust required to file Form 10?
-    - When is a trust required to file Form 10?
+    - What is the process for assigning lands for special purposes as per the code?
+    - How does the code outline the procedure for allocating lands for specific purposes?
+    - What are the steps involved in assigning lands for special purposes according to the code?
+    - According to the code, what is the protocol for designating lands for specific purposes?
+    - How does the code specify the process of allocating lands for special purposes?
+    - What procedures does the code establish for the assignment of lands for specific purposes?
 
-- intent: itir_query_q17
+- intent: q17
   examples: |
-    - When is a trust required to file Form 9A?
-    - When is a trust required to file Form 9A?
+    - How are demands for money, papers, etc., to be communicated to the person concerned under the code?
+    - According to the code, what method is used to convey requests for money, documents, etc., to the individual in question?
+    - How does the code dictate the communication of requests for money, papers, etc., to the relevant individual?
+    - What are the prescribed means of notifying individuals about requests for money, papers, etc., as per the code?
+    - In compliance with the code, what procedures are followed to inform individuals about requests for money, papers, etc.?
+    - How are demands for money, papers, etc., communicated to the concerned individual under the code's provisions?
 
-- intent: itir_query_q18
+- intent: q18
   examples: |
-    - What are the permissible modes for investment or deposit under Section 11(5) read with Rule 17C?
-    - What are the permissible modes for investment or deposit under Section 11(5) read with Rule 17C?
+    - What is the role of survey officers and circle officers as outlined in the code?
+    - How are the responsibilities of survey officers and circle officers defined within the code?
+    - What duties are assigned to survey officers and circle officers according to the code's provisions?
+    - What are the designated tasks of survey officers and circle officers as specified in the code?
+    - How does the code delineate the roles and responsibilities of survey officers and circle officers?
+    - What functions do survey officers and circle officers perform in accordance with the code?
 
-- intent: itir_query_q19
+- intent: q19
   examples: |
-    - What is the provision for the treatment of corpus donation?
-    - What is the provision for the treatment of corpus donation?
+    - How can the State Government confer powers of revenue officers on other persons according to the code?
+    - What procedures does the code outline for the State Government to delegate revenue officer powers to individuals?
+    - How does the code specify the process for granting revenue officer authority to other individuals by the State Government?
+    - What mechanisms are established in the code for the State Government to transfer revenue officer powers to other parties?
+    - According to the code, what steps are involved in authorizing non-governmental individuals with revenue officer powers by the State Government?
+    - How can the State Government empower external entities with revenue officer responsibilities as per the code's provisions?
 
-- intent: itir_query_q20
+- intent: q20
   examples: |
-    - What is the meaning of an anonymous donation?
-    - What is the meaning of an anonymous donation?
+    - What are the regulations regarding the use of pasturage according to the Maharashtra Land Revenue Code, 1966?
+    - How does the Maharashtra Land Revenue Code, 1966 regulate the utilization of pasturage?
+    - What provisions does the Maharashtra Land Revenue Code, 1966 contain concerning the management of pasturage?
+    - According to the Maharashtra Land Revenue Code, 1966, what rules govern the utilization of pasturage lands?
+    - What regulations are established in the Maharashtra Land Revenue Code, 1966 regarding the use of pasturage areas?
+    - How does the Maharashtra Land Revenue Code, 1966 address the management and utilization of pasturage lands?
 
-- intent: itir_query_q21
+- intent: q21
   examples: |
-    - What is the taxability of an anonymous donation?
-    - What is the taxability of an anonymous donation?
+    - How does the Code address the recovering value of natural products that have been unauthorizedly removed from certain lands?
+    - What measures does the Code prescribe for recovering the value of natural products illicitly removed from specific lands?
+    - How does the Code deal with the recovery of the value of natural products unlawfully extracted from designated lands?
+    - What provisions does the Code include for the restitution of the value of natural products taken without authorization from particular lands?
+    - According to the Code, what actions can be taken to recover the value of natural products removed without permission from specified lands?
+    - How does the Code address the issue of compensating for natural products unlawfully taken from designated lands?
 
-- intent: itir_query_q22
+- intent: q22
   examples: |
-    - When does the provision of accreted income apply?
-    - When does the provision of accreted income apply?
+    - What rights do individuals have to trees in their holdings?
+    - What are the rights of individuals concerning trees on their landholdings?
+    - How does the Code define the rights of individuals regarding trees within their holdings?
+    - What provisions does the Code include regarding the ownership of trees on individual holdings?
+    - what rights do individuals possess concerning trees situated on their holdings?
+    - How does the Code regulate the rights of individuals concerning trees on their land?
 
-- intent: itir_query_q23
+- intent: q23
   examples: |
-    - When is a specified trust or institution deemed to be converted?
-    - When is a specified trust or institution deemed to be converted?
+    - How are trees and forests vested in the Government according to the Maharashtra Land Revenue Code, 1966?
+    - What is the procedure for vesting trees and forests in the Government according to the Maharashtra Land Revenue Code, 1966?
+    - How does the Maharashtra Land Revenue Code, 1966, address the vesting of trees and forests in the Government?
+    - According to the Maharashtra Land Revenue Code, 1966, how are trees and forests transferred to the Government's ownership?
+    - What provisions does the Maharashtra Land Revenue Code, 1966, have regarding the transfer of trees and forests to Government ownership?
+    - How does the Maharashtra Land Revenue Code, 1966, regulate the transfer of trees and forests to the Government?
 
-- intent: itir_query_q24
+- intent: q24
   examples: |
-    - How to calculate accreted income?
-    - How to calculate accreted income?
+    - What is the procedure for the regulation of cutting and supply of wood, etc., as stated in the Code?
+    - 1. How does the Maharashtra Land Revenue Code, 1966, regulate the cutting and supply of wood and other materials?
+    - What procedures are outlined in the Maharashtra Land Revenue Code, 1966, for the regulation of cutting and supply of wood, etc.?
+    - According to the Maharashtra Land Revenue Code, 1966, how is the cutting and supply of wood and other materials regulated?
+    - What are the regulatory measures prescribed by the Maharashtra Land Revenue Code, 1966, for cutting and supplying wood, etc.?
+    - How does the Maharashtra Land Revenue Code, 1966, address the control and distribution of wood and related materials?
 
-- intent: itir_query_q25
+
+- intent: q25
   examples: |
-    - What is the specified date for the purpose of the calculation of accreted income?
-    - What is the specified date for the purpose of the calculation of accreted income?
+    - What are the classes of persons holding land according to the Code?
+    - According to the Maharashtra Land Revenue Code, 1966, what are the categories of individuals holding land?
+    - How does the Code classify individuals who possess land?
+    - What are the different classifications of landholders as per the Maharashtra Land Revenue Code, 1966?
+    - According to the Maharashtra Land Revenue Code, 1966, what are the defined groups of people holding land?
+    - How does the Code categorize persons based on land ownership?
 
-- intent: itir_query_q26
+- intent: q26
   examples: |
-    - What is the tax rate applicable to accreted income?
-    - What is the tax rate applicable to accreted income?
+    - How does the Code address the occupation of unalienated land granted under its provisions?
+    - What measures does the Maharashtra Land Revenue Code, 1966, undertake regarding the occupation of unalienated land granted under its provisions?
+    - How does the Code regulate the occupation of unalienated land granted under its provisions?
+    - What procedures are outlined in the Maharashtra Land Revenue Code, 1966, regarding the occupation of unalienated land granted under its provisions?
+    - According to the Maharashtra Land Revenue Code, 1966, what are the stipulations concerning the occupation of unalienated land granted under its provisions?
+    - How does the Maharashtra Land Revenue Code, 1966, handle the occupation of unalienated land granted under its provisions?
 
-- intent: itir_query_q27
+- intent: q27
   examples: |
-    - What is the provision for Section 115BBI?
-    - What is the provision for Section 115BBI?
+    - What conditions must be met for unoccupied land to be granted according to the Maharashtra Land Revenue Code, 1966?
+    - What are the prerequisites for unoccupied land to be granted under the Maharashtra Land Revenue Code, 1966?
+    - What criteria need to be fulfilled for unoccupied land to qualify for granting as per the Maharashtra Land Revenue Code, 1966?
+    - According to the Maharashtra Land Revenue Code, 1966, what conditions must be satisfied for unoccupied land to be granted?
+    - How does the Maharashtra Land Revenue Code, 1966, define the eligibility criteria for unoccupied land to be granted?
+    - What are the requirements outlined in the Maharashtra Land Revenue Code, 1966, for unoccupied land to be eligible for granting?
 
-- intent: itir_query_q28
+- intent: q28
   examples: |
-    - What are the specified violations when the registration of a trust can be canceled?
-    - What are the specified violations when the registration of a trust can be canceled?
+    - What is the temporary right to alluvial lands of small extent?
+    - What does the Maharashtra Land Revenue Code, 1966, specify regarding the temporary right to alluvial lands of small extent?
+    - what provisions are made for the temporary right to alluvial lands of small extent?
+    - How does the Maharashtra Land Revenue Code, 1966, address the temporary rights concerning alluvial lands of small extent?
+    - What is the temporary entitlement to alluvial lands of minor size?
+    - What are the regulations concerning the provisional use of small-sized alluvial lands under the Maharashtra Land Revenue Code, 1966?
 
-- intent: itir_query_q29
+- intent: q29
   examples: |
-    - What are the consequences of the cancellation of registration?
-    - What are the consequences of the cancellation of registration?
+    - What penalties are in place for using land without permission for non-agricultural purposes according to the Code?
+    - What are the consequences outlined in the Maharashtra Land Revenue Code, 1966, for unauthorized non-agricultural use of land?
+    - According to the Maharashtra Land Revenue Code, 1966, what penalties apply for utilizing land without authorization for non-agricultural activities?
+    - How does the Maharashtra Land Revenue Code, 1966, address the issue of penalties for utilizing land without permission for non-agricultural purposes?
+    - What sanctions are imposed under the Maharashtra Land Revenue Code, 1966, for using land without consent for non-agricultural use?
+    - What are the legal repercussions for unauthorized non-agricultural use of land as stipulated in the Maharashtra Land Revenue Code, 1966?
 
-- intent: itir_query_q30
+- intent: q30
   examples: |
-    - Under which circumstances will an exemption of Sections 11 and 12 be withdrawn?
-    - Under which circumstances will an exemption of Sections 11 and 12 be withdrawn?
+    - What is the Maharashtra Land Revenue Code, 1966 primarily concerned with?
+    - What is the main focus of the Maharashtra Land Revenue Code, 1966?
+    - What are the principal objectives of the Maharashtra Land Revenue Code, 1966?
+    - What is the primary purpose of enacting the Maharashtra Land Revenue Code, 1966?
+    - What are the main areas of interest covered by the Maharashtra Land Revenue Code, 1966?
+    - What is the central theme or subject matter addressed in the Maharashtra Land Revenue Code, 1966?
 
-- intent: itir_query_q31
+- intent: q31
   examples: |
-    - Which persons are treated as interested persons?
-    - Which persons are treated as interested persons?
+    - What are the provisions under Section 51 of the Maharashtra Land Revenue Code, 1966?
+    - What does Section 51 of the Maharashtra Land Revenue Code, 1966 entail?
+    - Can you provide an overview of the regulations outlined in Section 51 of the Maharashtra Land Revenue Code, 1966?
+    - What are the key provisions of Section 51 in the Maharashtra Land Revenue Code, 1966?
+    - Could you outline the guidelines specified under Section 51 of the Maharashtra Land Revenue Code, 1966?
+    - What are the statutory requirements delineated in Section 51 of the Maharashtra Land Revenue Code, 1966?
 
-- intent: itir_query_q32
+- intent: q32
   examples: |
-    - What is the meaning of substantial interest?
-    - What is the meaning of substantial interest?
+    - How is the value and land revenue calculated according to Section 52 of the Maharashtra Land Revenue Code, 1966?
+    - What is the process for calculating the value and land revenue under Section 52 of the Maharashtra Land Revenue Code, 1966?
+    - How does Section 52 of the Maharashtra Land Revenue Code, 1966 determine the assessment of land revenue and value?
+    - Can you explain the methodology for assessing land revenue and value as per Section 52 of the Maharashtra Land Revenue Code, 1966?
+    - What factors are considered in the computation of land revenue and value under Section 52 of the Maharashtra Land Revenue Code, 1966?
+    - Could you elucidate the procedure for determining land revenue and value outlined in Section 52 of the Maharashtra Land Revenue Code, 1966?
 
-- intent: itir_query_q33
+- intent: q33
   examples: |
-    - When is an Interested Person deemed to be benefited?
-    - When is an Interested Person deemed to be benefited?
+    - What powers are granted for the summary eviction of persons occupying land vested in the Government as per Section 53?
+    - What authority does Section 53 of the Maharashtra Land Revenue Code, 1966 provide for the summary eviction of individuals occupying government-vested land?
+    - How does Section 53 of the Maharashtra Land Revenue Code, 1966 empower the summary eviction of occupants on government-owned land?
+    - Can you elaborate on the provisions regarding summary eviction of land occupants vested in the Government under Section 53 of the Maharashtra Land Revenue Code, 1966?
+    - What are the powers conferred for evicting individuals occupying government land without proper authorization as per Section 53 of the Maharashtra Land Revenue Code, 1966?
+    - Could you explain the procedure for summary eviction of occupants from government-owned land outlined in Section 53 of the Maharashtra Land Revenue Code, 1966?
+
+- intent: q34
+  examples: |
+    - What additional temporary powers are provided for termination of licenses and removal of structures on forfeited land in Section 54A?
+    - Can you elaborate on the temporary powers granted for the termination of licenses and removal of structures on forfeited land as outlined in Section 54A?
+    - What are the additional provisions for the termination of licenses and demolition of structures on forfeited land provided in Section 54A?
+    - How does Section 54A of the Maharashtra Land Revenue Code, 1966 address the temporary powers for the termination of licenses and removal of structures on forfeited land?
+    - Could you explain the temporary measures specified in Section 54A regarding the termination of licenses and demolition of structures on forfeited land?
+    - What temporary powers are outlined in Section 54A for dealing with the termination of licenses and dismantling of structures on forfeited land?
 
 
+- intent: q35
+  examples: |
+    - What is the process of relinquishment of land as outlined in Sections 55-59 of the Maharashtra Land Revenue Code, 1966?
+    - Can you explain the procedure for relinquishing land according to Sections 55-59 of the Maharashtra Land Revenue Code, 1966?
+    - How is the relinquishment of land carried out as per Sections 55-59 of the Maharashtra Land Revenue Code, 1966?
+    - Could you elaborate on the steps involved in the relinquishment of land outlined in Sections 55-59 of the Maharashtra Land Revenue Code, 1966?
+    - What are the provisions regarding the relinquishment of land in Sections 55-59 of the Maharashtra Land Revenue Code, 1966?
+    - What process is prescribed for the relinquishment of land under Sections 55-59 of the Maharashtra Land Revenue Code, 1966?
+
+
+- intent: q36
+  examples: |
+    - How is land revenue assessed and fixed according to Sections 64-72 of the Maharashtra Land Revenue Code, 1966?
+    - Can you elaborate on the assessment and fixation of land revenue as per Sections 64-72 of the Maharashtra Land Revenue Code, 1966?
+    - How does the Maharashtra Land Revenue Code, 1966 determine and establish land revenue as outlined in Sections 64-72?
+    - Could you explain the process of assessing and fixing land revenue as described in Sections 64-72 of the Maharashtra Land Revenue Code, 1966?
+    - What are the provisions for assessing and fixing land revenue under Sections 64-72 of the Maharashtra Land Revenue Code, 1966?
+    - What steps are involved in the assessment and fixation of land revenue according to Sections 64-72 of the Maharashtra Land Revenue Code, 1966?
+
+
+- intent: q37
+  examples: |
+    - What are the provisions for the settlement of assessment directly with the holder from the State Government as per Section 69?
+    - Can you explain the provisions for the direct settlement of assessment between the holder and the State Government as stated in Section 69?
+    - How does Section 69 of the Maharashtra Land Revenue Code, 1966 address the settlement of assessment directly with the holder by the State Government?
+    - Could you outline the procedures outlined in Section 69 for the direct settlement of assessment between the holder and the State Government?
+    - What arrangements are made for settling assessments directly with holders by the State Government under Section 69 of the Maharashtra Land Revenue Code, 1966?
+    - What are the specific provisions regarding the direct settlement of assessment between holders and the State Government according to Section 69 of the Maharashtra Land Revenue Code, 1966?
+
+
+- intent: q38
+  examples: |
+    - How are forfeited holdings dealt with and disposed of according to Section 73 of the Maharashtra Land Revenue Code, 1966?
+    - What procedures are outlined in Section 73 of the Maharashtra Land Revenue Code, 1966 for dealing with and disposing of forfeited holdings?
+    - Can you explain the process for dealing with and disposing of forfeited holdings as per Section 73 of the Maharashtra Land Revenue Code, 1966?
+    - How does Section 73 of the Maharashtra Land Revenue Code, 1966 address the handling and disposal of forfeited holdings?
+    - What are the specific provisions outlined in Section 73 of the Maharashtra Land Revenue Code, 1966 regarding the management and disposal of forfeited holdings?
+    - Could you summarize the procedures described in Section 73 of the Maharashtra Land Revenue Code, 1966 for handling and disposing of forfeited holdings?
+
+
+- intent: q39
+  examples: |
+    - What are the penalties for failure to grant receipts and provisions for reduction, suspension, or remission of land revenue as per Sections 76-78 of the Maharashtra Land Revenue Code, 1966?
+    - What penalties are imposed for failure to grant receipts, and what provisions are made for the reduction, suspension, or remission of land revenue according to Sections 76-78 of the Maharashtra Land Revenue Code, 1966?
+    - Can you explain the penalties for failure to provide receipts and the provisions for reducing, suspending, or remitting land revenue as outlined in Sections 76-78 of the Maharashtra Land Revenue Code, 1966?
+    - How does the Maharashtra Land Revenue Code, 1966 address the issue of failure to issue receipts and provide mechanisms for reducing, suspending, or remitting land revenue in Sections 76-78?
+    - What are the consequences for not issuing receipts, and what mechanisms are available for reducing, suspending, or remitting land revenue according to Sections 76-78 of the Maharashtra Land Revenue Code, 1966?
+    - Could you summarize the penalties associated with the failure to issue receipts and the provisions for adjusting land revenue in Sections 76-78 of the Maharashtra Land Revenue Code, 1966?
+
+- intent: q40
+  examples: |
+    - What is the Maharashtra Land Revenue Code, 1966 and what does it govern?
+    - what does maharashtra land revenue code 1966 governs?
+    - what specific domains does the maharashtra land revenue code regulate?
+    - What legislative document encompasses the Maharashtra Land Revenue Code, 1966, and what are its areas of jurisdiction?
+    - Can you provide information about the Maharashtra Land Revenue Code, 1966, and its scope of authority?
+    - What is the Maharashtra Land Revenue Code, 1966, and what specific domains does it regulate?
+    - what is maharashtra land revenue code 1966?
+    - Could you elucidate the Maharashtra Land Revenue Code, 1966, and its governing responsibilities?
+    - What does the Maharashtra Land Revenue Code, 1966 entail, and what are the realms it governs within the state?
+
+- intent: q41
+  examples: |
+    - What is the process for introducing a revenue survey in any part of the state according to the Code?
+    - How does the Maharashtra Land Revenue Code outline the procedure for initiating a revenue survey in any region of the state?
+    - Can you elaborate on the steps involved in commencing a revenue survey in a specific area as per the Maharashtra Land Revenue Code?
+    - What are the prescribed steps for initiating a revenue survey in a particular locality according to the Maharashtra Land Revenue Code?
+    - Could you explain the process outlined in the Maharashtra Land Revenue Code for introducing a revenue survey in any part of the state?
+    - What provisions does the Maharashtra Land Revenue Code offer regarding the initiation of a revenue survey in various areas across the state?
+
+
+- intent: q42
+  examples: |
+    - What obligations do holders of land have in assisting with the measurement or classification of lands during a revenue survey?
+    - What responsibilities are imposed on landholders regarding aiding in the measurement or classification of lands during a revenue survey?
+    - Could you elaborate on the duties required of landholders in assisting with the measurement or classification of lands as part of a revenue survey?
+    - What are the obligations that landholders must fulfill concerning assisting with the measurement or classification of lands during a revenue survey?
+    - Can you outline the specific roles that landholders are expected to play in supporting the measurement or classification of lands during a revenue survey?
+    - What are the prescribed duties for landholders in contributing to the measurement or classification of lands as part of a revenue survey process?
+
+
+- intent: q43
+  examples: |
+    - How are survey numbers and sub-divisions recorded according to the Code?
+    - What is the prescribed method for recording survey numbers and sub-divisions as per the provisions of the Code?
+    - Can you explain how survey numbers and sub-divisions are documented in accordance with the Code?
+    - How does the Code specify the process for recording survey numbers and sub-divisions?
+    - What are the guidelines outlined in the Code regarding the recording of survey numbers and sub-divisions?
+    - Could you elaborate on the procedures established by the Code for the recording of survey numbers and sub-divisions?
+
+
+- intent: q44
+  examples: |
+    - What is the procedure for the assessment and settlement of land revenue of agricultural lands under Chapter VI of the Code?
+    - Can you outline the steps involved in the assessment and settlement of land revenue for agricultural lands as described in Chapter VI of the Code?
+    - How does Chapter VI of the Code delineate the process for assessing and settling land revenue for agricultural lands?
+    - Could you explain the procedural framework established by Chapter VI of the Code for the assessment and settlement of land revenue pertaining to agricultural lands?
+    - What are the specific provisions laid out in Chapter VI of the Code regarding the assessment and settlement of land revenue for agricultural lands?
+    - Can you provide an overview of the methodology prescribed in Chapter VI of the Code for assessing and settling land revenue concerning agricultural lands?
+
+
+- intent: q45
+  examples: |
+    - How is the term of settlement determined for land revenue of agricultural lands?
+    - What factors contribute to determining the term of settlement for land revenue associated with agricultural lands?
+    - How does the Code specify the criteria for establishing the term of settlement for land revenue related to agricultural lands?
+    - Can you elucidate the process by which the term of settlement is determined for land revenue concerning agricultural lands according to the Code?
+    - What considerations are taken into account when determining the term of settlement for land revenue attributed to agricultural lands as outlined in the Code?
+    - Could you provide insights into the principles guiding the determination of the term of settlement for land revenue concerning agricultural lands under the provisions of the Code?
+
+
+- intent: q46
+  examples: |
+    - What is the role of the Settlement Officer in making a settlement under the Code?
+    - How does the Settlement Officer contribute to the settlement process as outlined in the Code?
+    - Can you elaborate on the responsibilities of the Settlement Officer in making settlements according to the Code?
+    - What specific duties does the Settlement Officer perform in the settlement procedures under the Code?
+    - How does the Code define the involvement of the Settlement Officer in the settlement process?
+    - Could you explain the functions and authority of the Settlement Officer in making settlements as per the Code?
+
+
+- intent: q47
+  examples: |
+    - How are settlement reports handled and published according to the Code?
+    - What procedures are followed for handling and publishing settlement reports as per the Code?
+    - Can you explain the process of handling and publishing settlement reports outlined in the Code?
+    - How does the Code detail the handling and publication of settlement reports?
+    - What steps are involved in the handling and publication of settlement reports according to the Code?
+    - Could you describe the protocol for handling and publishing settlement reports as outlined in the Code?
+
+- intent: q48
+  examples: |
+    - What options are available for individuals claiming exemption from assessment for water advantages under the Code?
+    - What avenues exist for individuals seeking exemption from assessment for water advantages under the Code?
+    - Can you elaborate on the choices individuals have for claiming exemption from assessment for water advantages according to the Code?
+    - How does the Code outline the options for individuals claiming exemption from assessment for water advantages?
+    - What are the alternatives provided by the Code for individuals seeking exemption from assessment for water advantages?
+    - Could you detail the available courses of action for individuals claiming exemption from assessment for water advantages as per the Code?
+
+
+- intent: q49
+  examples: |
+    - How are errors in the assessment and settlement of land revenue corrected by the Collector according to the Code?
+    - What procedures does the Code establish for rectifying errors in the assessment and settlement of land revenue by the Collector?
+    - Can you explain how the Code addresses the correction of errors in land revenue assessment and settlement by the Collector?
+    - What are the steps outlined in the Code for the Collector to rectify errors in land revenue assessment and settlement?
+    - How does the Code delineate the process for correcting errors in land revenue assessment and settlement undertaken by the Collector?
+    - Could you elucidate the methods prescribed by the Code for the Collector to rectify errors in land revenue assessment and settlement?
+
+
+- intent: q50
+  examples: |
+    - How is the non-agricultural assessment of lands used for non-agricultural purposes determined according to the Code?
+    - What criteria does the Code specify for determining the non-agricultural assessment of lands utilized for non-agricultural purposes?
+    - Can you elaborate on the process outlined in the Code for determining the non-agricultural assessment of lands used for non-agricultural purposes?
+    - How does the Code establish the methodology for assessing non-agricultural lands utilized for non-agricultural purposes?
+    - What factors are considered in the Code when determining the assessment of non-agricultural lands used for non-agricultural purposes?
+    - Could you explain the procedure delineated in the Code for determining the assessment of non-agricultural lands utilized for non-agricultural purposes?
+
+
+- intent: q51
+  examples: |
+    - What is the maximum percentage that non-agricultural assessment should not exceed in relation to the full market value of the land?
+    - What is the upper limit prescribed by the Code for the non-agricultural assessment percentage concerning the total market value of the land?
+    - Can you specify the maximum percentage mentioned in the Code that the non-agricultural assessment should not surpass relative to the full market value of the land?
+    - What is the highest percentage delineated in the Code that the non-agricultural assessment must not exceed concerning the total market worth of the land?
+    - Could you elaborate on the maximum allowable percentage set by the Code for the non-agricultural assessment in relation to the complete market value of the land?
+    - How does the Code define the maximum percentage limit for the non-agricultural assessment concerning the total market value of the land?
+
+
+- intent: q52
+  examples: |
+    - What is the power of the collector in relation to fixing the standard rate of non-agricultural assessment?
+    - What authority does the collector possess regarding the establishment of the standard rate for non-agricultural assessment?
+    - Can you elaborate on the collector's jurisdiction concerning the determination of the standard rate for non-agricultural assessment?
+    - What role does the collector play in setting the standard rate for non-agricultural assessment as per the provisions of the Code?
+    - Could you explain the collector's responsibility in defining the standard rate for non-agricultural assessment according to the Code?
+    - How does the Code delineate the collector's power in determining the standard rate for non-agricultural assessment?
+
+
+- intent: q53
+  examples: |
+    - How are lands exempt from payment of non-agricultural assessment determined?  
+    - What criteria are considered for determining lands exempt from non-agricultural assessment payments?
+    - Can you elaborate on the process of identifying lands exempt from non-agricultural assessment payments?
+    - What factors are taken into account to determine the exemption of lands from non-agricultural assessment payments?
+    - How does the Code specify the procedure for identifying lands exempt from non-agricultural assessment payments?
+    - Could you explain the method used to ascertain lands exempt from non-agricultural assessment payments according to the Code?
+
+
+- intent: q54
+  examples: |
+    - What is the procedure for determining non-agricultural assessment in urban areas according to the Code?
+    - How does the Code outline the process for determining non-agricultural assessment in urban areas?
+    - Can you explain the steps involved in determining non-agricultural assessment in urban areas as per the Code?
+    - What procedures does the Code specify for assessing non-agricultural land in urban areas?
+    - Could you provide an overview of the method prescribed by the Code for assessing non-agricultural land in urban areas?
+    - What are the guidelines outlined in the Code for determining non-agricultural assessment in urban areas?
+
+- intent: q55
+  examples: |
+    - How are the limits of sites of villages, towns, and cities to be fixed under Chapter VIII of the Code?
+    - What process does Chapter VIII of the Code specify for fixing the limits of sites of villages, towns, and cities?
+    - Can you explain how the limits of sites of villages, towns, and cities are determined according to Chapter VIII of the Code?
+    - What guidelines are provided in Chapter VIII of the Code for establishing the boundaries of sites of villages, towns, and cities?
+    - Could you outline the steps involved in fixing the limits of sites of villages, towns, and cities as per Chapter VIII of the Code?
+    - How does Chapter VIII of the Code address the determination of boundaries for sites of villages, towns, and cities?
+
+
+- intent: q56
+  examples: |
+    - What is the process for the fixation and demarcation of boundaries according to the Code?
+    - How does the Code outline the process for fixing and demarcating boundaries?
+    - What steps are involved in the fixation and demarcation of boundaries as per the Code?
+    - Can you describe the procedure for fixing and demarcating boundaries according to the Code?
+    - What guidelines does the Code provide for the fixation and demarcation of boundaries?
+    - Could you explain the process of boundary fixation and demarcation outlined in the Code?
+
+- intent: q57
+  examples: |
+    - How are disputes regarding boundaries between villages, survey numbers, and sub-divisions resolved under the Code?
+    - What mechanisms does the Code provide for resolving disputes related to boundaries between villages, survey numbers, and sub-divisions?
+    - How does the Code address disputes arising from boundaries between villages, survey numbers, and sub-divisions?
+    - Can you explain the process outlined in the Code for resolving disputes concerning boundaries among villages, survey numbers, and sub-divisions?
+    - What provisions are made in the Code for handling disputes regarding boundaries between villages, survey numbers, and sub-divisions?
+    - Could you elaborate on the procedures established by the Code for resolving conflicts regarding boundaries among villages, survey numbers, and sub-divisions?
+
+
+- intent: q58
+  examples: |
+    - How does the Code address the grant of sanad (land ownership document) in relation to village sites?
+    - What provisions does the Code make regarding the issuance of sanad (land ownership document) for village sites?
+    - Can you explain the procedures outlined in the Code for granting sanad (land ownership document) for village sites?
+    - How does the Code regulate the granting of sanad (land ownership document) for village sites?
+    - What are the rules and regulations laid down by the Code concerning the grant of sanad (land ownership document) for village sites?
+    - Could you provide an overview of the Code's approach to the issuance of sanad (land ownership document) for village sites?
+
+
+- intent: q59
+  examples: |
+    - What are the key sections related to the demarcation of boundaries in the Code?
+    - Can you highlight the key sections pertaining to boundary demarcation in the Code?
+    - What sections of the Code address the demarcation of boundaries?
+    - Could you provide an overview of the relevant sections concerning boundary demarcation in the Code?
+    - What are the primary sections that deal with boundary demarcation according to the Code?
+    - Can you summarize the sections of the Code that cover boundary demarcation?
+    - state the key sections of the Code relating to boundary demarcation.
+    - list down the  main provisions/sections of the Code regarding the demarcation of boundaries.
+
+- intent: q60
+  examples: |
+    - Who is responsible for the maintenance of boundary marks and survey marks according to the Code?
+    - What entity is tasked with the upkeep of boundary marks and survey marks as per the Code?
+    - According to the Code, which authority is responsible for maintaining boundary marks and survey marks?
+    - Who bears the responsibility for the maintenance of boundary marks and survey marks under the Code?
+    - Could you clarify the party responsible for the preservation of boundary marks and survey marks in accordance with the Code?
+    - What is the designated authority responsible for the care and maintenance of boundary marks and survey marks as outlined in the Code?
+
+
+- intent: q61
+  examples: |
+    - What is the role of the Collector in relation to boundary marks and survey marks?
+    - Could you explain the duties of the Collector concerning boundary marks and survey marks?
+    - What responsibilities does the Collector hold regarding boundary marks and survey marks?
+    - How is the role of the Collector defined in relation to boundary marks and survey marks?
+    - What tasks are assigned to the Collector concerning boundary marks and survey marks?
+    - What is the specific function of the Collector concerning boundary marks and survey marks?
+
+- intent: q62
+  examples: |
+    - What is the penalty for injuring boundary marks as per the Code?
+    - What consequences are specified for damaging boundary marks in the Code?
+    - How does the Code address the issue of damaging boundary marks?
+    - What penalties are outlined for harming boundary marks in accordance with the Code?
+    - What provisions does the Code have for individuals who damage boundary marks?
+    - What punishment is prescribed for individuals found guilty of injuring boundary marks under the Code?
+
+- intent: q63
+  examples: |
+    - How are rights in unoccupied land regulated under the Code?
+    - What regulations govern rights in unoccupied land according to the Code?
+    - How does the Code address rights in unoccupied land?
+    - What provisions are made for rights in unoccupied land under the Code?
+    - How are rights in unoccupied land regulated by the Code?
+    - What rules are established regarding rights in unoccupied land in the Code?
+
+- intent: q64
+  examples: |
+    - What is the purpose of the Record of Rights according to the Code?
+    - What is the function of the Record of Rights as outlined in the Code?
+    - How does the Code define the purpose of the Record of Rights?
+    - What is the intended use of the Record of Rights according to the Code?
+    - What role does the Record of Rights serve in the context of the Code?
+    - How is the purpose of the Record of Rights described in the Code?
+
+- intent: q65
+  examples: |
+    - What is the significance of the Nistar Patrak in the context of land rights?
+    - What role does the Nistar Patrak play concerning land rights?
+    - How is the Nistar Patrak significant in the realm of land rights?
+    - What importance does the Nistar Patrak hold regarding land ownership?
+    - How does the Nistar Patrak contribute to the understanding of land rights?
+    - What is the significance of the Nistar Patrak in delineating land rights?
+
+- intent: q66
+  examples: |
+    - How are transfers of land intimated according to the Code?
+    - What procedure does the Code stipulate for notifying land transfers?
+    - How are land transfers communicated as per the provisions of the Code?
+    - What method does the Code prescribe for conveying land transfers?
+    - How are changes in land ownership notified under the Code?
+    - What process does the Code outline for informing authorities about land transfers?
+
+- intent: q67
+  examples: |
+    - What is the presumption regarding the correctness of entries in the record of rights and register of mutations?
+    - According to the Code, what presumption is made about the accuracy of entries in the record of rights and register of mutations?
+    - How does the Code handle the presumption of correctness regarding entries in the record of rights and register of mutations?
+    - What is the default assumption regarding the accuracy of entries in the record of rights and register of mutations under the Code?
+    - How does the Code address the presumption of validity for entries in the record of rights and register of mutations?
+    - What is the legal presumption concerning the accuracy of entries in the record of rights and register of mutations according to the Code?
+
+
+- intent: q68
+  examples: |
+    - According to Section 169, whose claims have precedence over all others in terms of land revenue?
+    - Under Section 169 of the Maharashtra Land Revenue Code, whose demands supersede all others concerning land revenue?
+    - Who holds the foremost claim to land revenue as per Section 169 of the Maharashtra Land Revenue Code?
+    - As stated in Section 169 of the Maharashtra Land Revenue Code, whose assertions are prioritized over others regarding land revenue?
+    - Whose rights are given priority over all others in terms of land revenue according to Section 169 of the Maharashtra Land Revenue Code?
+    - As per Section 169 of the Maharashtra Land Revenue Code, whose interests are considered paramount with respect to land revenue?
+
+
+- intent: q69
+  examples: |
+    - When is land revenue typically due and payable, according to Section 170?
+    - As per Section 170 of the Maharashtra Land Revenue Code, when is land revenue usually expected to be paid?
+    - According to Section 170 of the Maharashtra Land Revenue Code, what is the typical deadline for land revenue payment?
+    - When must land revenue be paid by, in accordance with Section 170 of the Maharashtra Land Revenue Code?
+    - What is the standard timeframe for land revenue payment as outlined in Section 170 of the Maharashtra Land Revenue Code?
+    - Under Section 170 of the Maharashtra Land Revenue Code, by what date should land revenue typically be settled?
+
+- intent: q70
+  examples: |
+    - What is the penalty for defaulting on the payment of land revenue, as stated in Section 174?
+    - What consequences are outlined in Section 174 for failing to pay land revenue on time?
+    - According to Section 174, what penalties apply for defaulting on land revenue payments?
+    - What are the repercussions for late payment of land revenue, as per Section 174?
+    - Under Section 174, what is the punishment for defaulting on land revenue payment?
+    - How does Section 174 of the Maharashtra Land Revenue Code address the issue of overdue land revenue payments?
+
+
+- intent: q71
+  examples: |
+    - How are arrears of land revenue recovered, as outlined in Section 176?
+    - What procedures are detailed in Section 176 for the recovery of overdue land revenue?
+    - According to Section 176, what methods are employed to recover arrears of land revenue?
+    - How does Section 176 of the Maharashtra Land Revenue Code address the recovery of overdue land revenue?
+    - What steps are outlined in Section 176 for the retrieval of unpaid land revenue?
+    - Under Section 176, what mechanisms are employed to collect outstanding land revenue?
+
+- intent: q72
+  examples: |
+    - Under what circumstances can the State Government forfeit occupancy or alienated holdings, as mentioned in Section 179?
+    - What are the conditions under which the State Government may forfeit occupancy or alienated holdings, as specified in Section 179?
+    - According to Section 179, what situations warrant the forfeiture of occupancy or alienated holdings by the State Government?
+    - How does Section 179 of the Maharashtra Land Revenue Code outline the circumstances for the forfeiture of occupancy or alienated holdings by the State Government?
+    - What criteria are established in Section 179 for the State Government to forfeit occupancy or alienated holdings?
+    - Under Section 179, what conditions must be met for the State Government to forfeit occupancy or alienated holdings?
+
+
+- intent: q73
+  examples: |
+    - What is the process for the distraint and sale of a defaulter's movable property, as described in Section 180?
+    - How does Section 180 delineate the procedure for the distraint and sale of a defaulter's movable property?
+    - According to Section 180, what is the process for distraint and sale of movable property belonging to defaulters?
+    - What steps are outlined in Section 180 for the distraint and sale of movable property owned by defaulters?
+    - Under Section 180, what are the procedures involved in the distraint and sale of movable property of defaulters?
+    - How does Section 180 of the Maharashtra Land Revenue Code specify the method for the distraint and sale of a defaulter's movable assets?
+
+
+- intent: q74
+  examples: |
+    - How does the Code address the management of villages or estates not belonging to the Government, as stated in Section 187?
+    - What provisions are laid out in Section 187 regarding the management of villages or estates not owned by the Government, according to the Maharashtra Land Revenue Code?
+    - How does Section 187 of the Maharashtra Land Revenue Code deal with the management of villages or estates not under Government ownership?
+    - What are the regulations outlined in Section 187 concerning the management of villages or estates not held by the Government, as per the Maharashtra Land Revenue Code?
+    - According to Section 187 of the Maharashtra Land Revenue Code, what measures are in place for managing villages or estates that are not Government property?
+    - How does Section 187 of the Maharashtra Land Revenue Code address the administration of villages or estates that are not owned by the Government?
+
+
+- intent: q75
+  examples: |
+    - What are the procedures for the sale of immovable property in case of default, according to Sections 181 and 194?
+    - Can you outline the steps involved in the sale of immovable property in case of default, as prescribed by Sections 181 and 194 of the Maharashtra Land Revenue Code?
+    - What are the specified procedures for selling immovable property in instances of default, as detailed in Sections 181 and 194 of the Maharashtra Land Revenue Code?
+    - How does the Maharashtra Land Revenue Code specify the process for selling immovable property when default occurs, as per Sections 181 and 194?
+    - According to Sections 181 and 194 of the Maharashtra Land Revenue Code, what are the established protocols for selling immovable property in cases of default?
+    - Can you provide an overview of the sale procedures for immovable property in default situations, as outlined in Sections 181 and 194 of the Maharashtra Land Revenue Code?
+
+
+- intent: q76
+  examples: |
+    - What are the consequences if a village or estate attached by the State Government is not redeemed within twelve years, as per Section 190?
+    - What are the implications if a village or estate attached by the State Government remains unredeemed for a period of twelve years, as stated in Section 190?
+    - Can you explain the repercussions of failing to redeem a village or estate attached by the State Government within twelve years, as outlined in Section 190?
+    - What happens if a village or estate attached by the State Government is not redeemed within a twelve-year timeframe, as per Section 190?
+    - Under Section 190, what are the outcomes if a village or estate attached by the State Government is not redeemed within the stipulated twelve-year period?
+    - According to Section 190, what are the potential consequences if a village or estate attached by the State Government remains unredeemed for twelve years?
