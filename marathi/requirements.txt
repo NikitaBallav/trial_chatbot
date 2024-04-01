@@ -1,0 +1,5 @@
+rasa
+mysqlclient
+python-dotenv
+pandas
+transformers
