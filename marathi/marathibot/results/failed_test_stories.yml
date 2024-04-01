@@ -1,0 +1,6 @@
+version: "3.1"
+stories:
+- story: path 9 (C:\chatbot nic\data_con_rasa\marathibot\tests\test_stories.yml)
+  steps:
+  - intent: q9  # predicted: q30: १९६६ मध्ये महाराष्ट्रात जमीन महसूल कायद्याचे प्रारूप करण्याचे मुख्य कारण कोणते होते?
+  - action: action_ans9_db

@@ -1,0 +1,131 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: path 1
+  steps:
+  - user: |
+      नमस्कार!
+    intent: greet
+  - action: action_greet_db
+  - user: |
+      सरकारी केंद्रीय प्रेस कुठे आहे?
+    intent: q7
+  - action: action_ans7_db
+
+- story: path 2
+  steps:
+  - user: |
+      अहो
+    intent: greet
+  - action: action_greet_db
+  - user: |
+      महाराष्ट्र राज्यातील शासकीय मुद्रण, लेखनसामग्री आणि प्रकाशनांचे संचालक कोण आहेत?
+    intent: q5
+  - action: action_ans5_db
+  - user: |
+      बाय-बाय!
+    intent: goodbye
+  - action: action_goodbye_db
+
+- story: path 3
+  steps:
+  - user: |
+      नमस्कार कसा आहेस
+    intent: greet
+  - action: action_greet_db
+  - user: |
+      महसूल अधिकाऱ्यांचे अधिकार आणि कर्तव्ये सांगा.
+    intent: q12
+  - action: action_ans12_db
+  - user: |
+      ठीक आहे
+    intent: affirm
+  - action: action_happy_db
+
+- story: path 4
+  steps:
+  - user: |
+      शुभ प्रभात
+    intent: greet
+  - action: action_greet_db
+  - user: |
+      तुरुंगातील अधिकारी किंवा व्यक्तीची सुटका करण्यासाठी काय प्रक्रिया आहे? 
+    intent: q15
+  - action: action_ans15_db
+  - user: |
+      खरोखर नाही
+    intent: deny
+  - action: action_sorry_db
+
+- story: path 5
+  steps:
+  - user: |
+      अहो
+    intent: greet
+  - action: action_greet_db
+  - user: |
+      एखाद्या व्यक्तीला त्यांच्या जमिनीवरील झाडांसाठी कोणते अधिकार आहेत?
+    intent: q22
+  - action: action_ans22_db
+  - user: |
+      नाही
+    intent: deny
+  - action: action_sorry_db
+
+- story: say goodbye
+  steps:
+  - user: |
+      तुमचा दिवस चांगला जावो
+    intent: goodbye
+  - action: action_goodbye_db
+
+- story: bot challenge
+  steps:
+  - user: |
+      तू बॉट आहेस का?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: path 6
+  steps:
+  - user: |
+      मंडळ अधिकारी आणि सर्वेक्षण अधिकारी संहितेनुसार कोणती कामे करतात?
+    intent: q18
+  - action: action_ans18_db
+
+- story: path 7
+  steps:
+  - user: |
+      भारतात कायदा लागू करण्याच्या जबाबदारीसाठी कोणते अधिकारी उत्तरदायी आहेत?
+    intent: q4
+  - action: action_ans4_db
+
+
+- story: path 8
+  steps:
+  - user: |
+      सरकारी केंद्रीय मुद्रणालयचा पत्ता काय आहे?
+    intent: q7
+  - action: action_ans7_db
+
+- story: path 9
+  steps:
+  - user: |
+      १९६६ मध्ये महाराष्ट्रात जमीन महसूल कायद्याचे प्रारूप करण्याचे मुख्य कारण कोणते होते?
+    intent: q9
+  - action: action_ans9_db
+
+- story: path 10
+  steps:
+  - user: |
+      संहितेच्या विशिष्ट उद्देशांसाठी जमिनींच्या वाटप करण्याच्या प्रक्रियेची रूपरेषा कसे आहे, याचा प्रदर्शन कसा होतो?
+    intent: q16
+  - action: action_ans16_db
+
+- story: path 11
+  steps:
+  - user: |
+      १९६६ साली महाराष्ट्र जमीन महसूल संहितेत कुराच्या वापराचे नियमन कसे केले जाते?
+    intent: q20
+  - action: action_ans20_db
