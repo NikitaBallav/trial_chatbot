@@ -1,27 +1,1383 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
+from typing import Any, Text, Dict, List
+
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+import pandas as pd
+import random
+import os
+import MySQLdb
+from dotenv import load_dotenv
+import pandas as pd
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Create the connection object
+conn = MySQLdb.connect(
+    host=os.environ.get("HOST", "localhost"),
+    user=os.environ.get("USER", "root"),
+    passwd=os.environ.get("PASSWORD", "Nikita#23032001"),
+    db=os.environ.get("DATABASE", "marathi"),
+    ssl_mode='DISABLED'  # Disable SSL certificate validation
+)
+
+class action_greet_db(Action):
+    def name(self) -> Text:
+        return "action_greet_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'greet'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
 
 
-# This is a simple example for a custom action which utters "Hello World!"
+class action_goodbye_db(Action):
+    def name(self) -> Text:
+        return "action_goodbye_db"
 
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'goodbye'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_happy_db(Action):
+    def name(self) -> Text:
+        return "action_happy_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'happy'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_sorry_db(Action):
+    def name(self) -> Text:
+        return "action_sorry_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'sad'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans1_db(Action):
+    def name(self) -> Text:
+        return "action_ans1_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A1'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans2_db(Action):
+    def name(self) -> Text:
+        return "action_ans2_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A2'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans3_db(Action):
+    def name(self) -> Text:
+        return "action_ans3_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A3'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans4_db(Action):
+    def name(self) -> Text:
+        return "action_ans4_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A4'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans5_db(Action):
+    def name(self) -> Text:
+        return "action_ans5_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A5'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans6_db(Action):
+    def name(self) -> Text:
+        return "action_ans6_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A6'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans7_db(Action):
+    def name(self) -> Text:
+        return "action_ans7_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A7'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans8_db(Action):
+    def name(self) -> Text:
+        return "action_ans8_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A8'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans9_db(Action):
+    def name(self) -> Text:
+        return "action_ans9_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A9'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans10_db(Action):
+    def name(self) -> Text:
+        return "action_ans10_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A10'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans11_db(Action):
+    def name(self) -> Text:
+        return "action_ans11_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A11'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans12_db(Action):
+    def name(self) -> Text:
+        return "action_ans12_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A12'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans13_db(Action):
+    def name(self) -> Text:
+        return "action_ans13_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A13'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans14_db(Action):
+    def name(self) -> Text:
+        return "action_ans14_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A14'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans15_db(Action):
+    def name(self) -> Text:
+        return "action_ans15_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A15'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans16_db(Action):
+    def name(self) -> Text:
+        return "action_ans16_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A16'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans17_db(Action):
+    def name(self) -> Text:
+        return "action_ans17_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A17'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans18_db(Action):
+    def name(self) -> Text:
+        return "action_ans18_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A18'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans19_db(Action):
+    def name(self) -> Text:
+        return "action_ans19_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A19'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans20_db(Action):
+    def name(self) -> Text:
+        return "action_ans20_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A20'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans21_db(Action):
+    def name(self) -> Text:
+        return "action_ans21_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A21'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans22_db(Action):
+    def name(self) -> Text:
+        return "action_ans22_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A22'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans23_db(Action):
+    def name(self) -> Text:
+        return "action_ans23_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A23'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans24_db(Action):
+    def name(self) -> Text:
+        return "action_ans24_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A24'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans25_db(Action):
+    def name(self) -> Text:
+        return "action_ans25_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A25'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans26_db(Action):
+    def name(self) -> Text:
+        return "action_ans26_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A26'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans27_db(Action):
+    def name(self) -> Text:
+        return "action_ans27_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A27'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans28_db(Action):
+    def name(self) -> Text:
+        return "action_ans28_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A28'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans29_db(Action):
+    def name(self) -> Text:
+        return "action_ans29_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A29'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+class action_ans30_db(Action):
+    def name(self) -> Text:
+        return "action_ans30_db"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        query= "SELECT chatbot_responses FROM marathi.maradata WHERE intent_group_name = 'A30'"
+        responses_list= pd.read_sql_query(query, conn)
+
+        random_response = random.choice(responses_list['chatbot_responses'])
+
+        dispatcher.utter_message(text=random_response)
+
+        return []
+
+# class action_ans31_db(Action):
 #     def name(self) -> Text:
-#         return "action_hello_world"
-#
+#         return "action_ans31_db"
+
 #     def run(self, dispatcher: CollectingDispatcher,
 #             tracker: Tracker,
 #             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q31'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans32_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans32_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q32'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans33_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans33_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q33'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans34_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans34_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q34'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans35_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans35_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q35'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans36_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans36_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q36'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans37_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans37_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q37'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans38_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans38_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q38'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans39_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans39_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q39'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans40_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans40_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q40'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans41_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans41_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q41'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans42_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans42_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q42'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans43_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans43_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q43'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans44_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans44_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q44'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans45_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans45_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q45'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans46_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans46_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q46'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans47_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans47_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q47'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans48_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans48_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q48'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans49_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans49_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q49'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans50_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans50_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q50'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans51_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans51_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q51'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans52_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans52_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q52'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans53_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans53_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q53'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans54_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans54_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q54'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans55_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans55_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q55'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans56_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans56_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q56'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans57_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans57_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q57'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans58_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans58_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q58'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans59_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans59_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q59'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans60_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans60_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q60'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans61_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans61_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q61'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans62_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans62_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q62'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans63_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans63_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q63'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans64_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans64_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q64'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans65_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans65_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q65'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans66_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans66_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q66'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans67_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans67_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q67'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans68_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans68_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q68'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans69_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans69_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q69'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans70_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans70_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q70'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans71_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans71_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q71'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans72_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans72_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q72'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans73_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans73_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q73'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans74_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans74_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q74'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans75_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans75_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q75'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
+#         return []
+
+# class action_ans76_db(Action):
+#     def name(self) -> Text:
+#         return "action_ans76_db"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         query= "SELECT chatbot_responses FROM engdata.chatbot WHERE intent_group_name = 'q76'"
+#         responses_list= pd.read_sql_query(query, conn)
+
+#         random_response = random.choice(responses_list['chatbot_responses'])
+
+#         dispatcher.utter_message(text=random_response)
+
 #         return []
