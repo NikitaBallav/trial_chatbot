@@ -1,0 +1,413 @@
+version: "3.1"
+
+rules:
+
+- rule: Say greet anytime the user says greet
+  steps:
+  - intent: greet
+  - action: action_greet_db
+
+- rule: Say happy anytime the user says affirm
+  steps:
+  - intent: affirm
+  - action: action_happy_db
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: action_goodbye_db
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say sorry anytime the user says deny
+  steps:
+  - intent: deny
+  - action: action_sorry_db
+
+- rule: Say fallback anytime the user says fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: Say ans1 anytime the user says q1
+  steps:
+  - intent: q1
+  - action: action_ans1_db
+
+- rule: Say ans2 anytime the user says q2
+  steps:
+  - intent: q2
+  - action: action_ans2_db
+
+- rule: Say ans3 anytime the user says q3
+  steps:
+  - intent: q3
+  - action: action_ans3_db
+
+- rule: Say ans4 anytime the user says q4
+  steps:
+  - intent: q4
+  - action: action_ans4_db
+
+- rule: Say ans5 anytime the user says q5
+  steps:
+  - intent: q5
+  - action: action_ans5_db
+
+- rule: Say ans6 anytime the user says q6
+  steps:
+  - intent: q6
+  - action: action_ans6_db
+
+- rule: Say ans7 anytime the user says q7
+  steps:
+  - intent: q7
+  - action: action_ans7_db
+
+- rule: Say ans8 anytime the user says q8
+  steps:
+  - intent: q8
+  - action: action_ans8_db
+
+- rule: Say ans9 anytime the user says q9
+  steps:
+  - intent: q9
+  - action: action_ans9_db
+
+- rule: Say ans10 anytime the user says q10
+  steps:
+  - intent: q10
+  - action: action_ans10_db
+
+- rule: Say ans11 anytime the user says q11
+  steps:
+  - intent: q11
+  - action: action_ans11_db
+
+- rule: Say ans12 anytime the user says q12
+  steps:
+  - intent: q12
+  - action: action_ans12_db
+
+- rule: Say ans13 anytime the user says q13
+  steps:
+  - intent: q13
+  - action: action_ans13_db
+
+- rule: Say ans14 anytime the user says q14
+  steps:
+  - intent: q14
+  - action: action_ans14_db
+
+- rule: Say ans15 anytime the user says q15
+  steps:
+  - intent: q15
+  - action: action_ans15_db
+
+- rule: Say ans16 anytime the user says q16
+  steps:
+  - intent: q16
+  - action: action_ans16_db
+
+- rule: Say ans17 anytime the user says q17
+  steps:
+  - intent: q17
+  - action: action_ans17_db
+
+- rule: Say ans18 anytime the user says q18
+  steps:
+  - intent: q18
+  - action: action_ans18_db
+
+- rule: Say ans19 anytime the user says q19
+  steps:
+  - intent: q19
+  - action: action_ans19_db
+
+- rule: Say ans20 anytime the user says q20
+  steps:
+  - intent: q20
+  - action: action_ans20_db
+
+- rule: Say ans21 anytime the user says q21
+  steps:
+  - intent: q21
+  - action: action_ans21_db
+
+- rule: Say ans22 anytime the user says q22
+  steps:
+  - intent: q22
+  - action: action_ans22_db
+
+- rule: Say ans23 anytime the user says q23
+  steps:
+  - intent: q23
+  - action: action_ans23_db
+
+- rule: Say ans24 anytime the user says q24
+  steps:
+  - intent: q24
+  - action: action_ans24_db
+
+- rule: Say ans25 anytime the user says q25
+  steps:
+  - intent: q25
+  - action: action_ans25_db
+
+- rule: Say ans26 anytime the user says q26
+  steps:
+  - intent: q26
+  - action: action_ans26_db
+
+- rule: Say ans27 anytime the user says q27
+  steps:
+  - intent: q27
+  - action: action_ans27_db
+
+- rule: Say ans28 anytime the user says q28
+  steps:
+  - intent: q28
+  - action: action_ans28_db
+
+- rule: Say ans29 anytime the user says q29
+  steps:
+  - intent: q29
+  - action: action_ans29_db
+
+- rule: Say ans30 anytime the user says q30
+  steps:
+  - intent: q30
+  - action: action_ans30_db
+
+- rule: Say ans31 anytime the user says q31
+  steps:
+  - intent: q31
+  - action: action_ans31_db
+
+- rule: Say ans32 anytime the user says q32
+  steps:
+  - intent: q32
+  - action: action_ans32_db
+
+- rule: Say ans33 anytime the user says q33
+  steps:
+  - intent: q33
+  - action: action_ans33_db
+
+- rule: Say ans34 anytime the user says q34
+  steps:
+  - intent: q34
+  - action: action_ans34_db
+
+- rule: Say ans35 anytime the user says q35
+  steps:
+  - intent: q35
+  - action: action_ans35_db
+
+- rule: Say ans36 anytime the user says q36
+  steps:
+  - intent: q36
+  - action: action_ans36_db
+
+- rule: Say ans37 anytime the user says q37
+  steps:
+  - intent: q37
+  - action: action_ans37_db
+
+- rule: Say ans38 anytime the user says q38
+  steps:
+  - intent: q38
+  - action: action_ans38_db
+
+- rule: Say ans39 anytime the user says q39
+  steps:
+  - intent: q39
+  - action: action_ans39_db
+
+- rule: Say ans40 anytime the user says q40
+  steps:
+  - intent: q40
+  - action: action_ans40_db
+
+- rule: Say ans41 anytime the user says q41
+  steps:
+  - intent: q41
+  - action: action_ans41_db
+
+- rule: Say ans42 anytime the user says q42
+  steps:
+  - intent: q42
+  - action: action_ans42_db
+
+- rule: Say ans43 anytime the user says q43
+  steps:
+  - intent: q43
+  - action: action_ans43_db
+
+- rule: Say ans44 anytime the user says q44
+  steps:
+  - intent: q44
+  - action: action_ans44_db
+
+- rule: Say ans45 anytime the user says q45
+  steps:
+  - intent: q45
+  - action: action_ans45_db
+
+- rule: Say ans46 anytime the user says q46
+  steps:
+  - intent: q46
+  - action: action_ans46_db
+
+- rule: Say ans47 anytime the user says q47
+  steps:
+  - intent: q47
+  - action: action_ans47_db
+
+- rule: Say ans48 anytime the user says q48
+  steps:
+  - intent: q48
+  - action: action_ans48_db
+
+- rule: Say ans49 anytime the user says q49
+  steps:
+  - intent: q49
+  - action: action_ans49_db
+
+- rule: Say ans50 anytime the user says q50
+  steps:
+  - intent: q50
+  - action: action_ans50_db
+
+- rule: Say ans51 anytime the user says q51
+  steps:
+  - intent: q51
+  - action: action_ans51_db
+
+- rule: Say ans52 anytime the user says q52
+  steps:
+  - intent: q52
+  - action: action_ans52_db
+
+- rule: Say ans53 anytime the user says q53
+  steps:
+  - intent: q53
+  - action: action_ans53_db
+
+- rule: Say ans54 anytime the user says q54
+  steps:
+  - intent: q54
+  - action: action_ans54_db
+
+- rule: Say ans55 anytime the user says q55
+  steps:
+  - intent: q55
+  - action: action_ans55_db
+
+- rule: Say ans56 anytime the user says q56
+  steps:
+  - intent: q56
+  - action: action_ans56_db
+
+- rule: Say ans57 anytime the user says q57
+  steps:
+  - intent: q57
+  - action: action_ans57_db
+
+- rule: Say ans58 anytime the user says q58
+  steps:
+  - intent: q58
+  - action: action_ans58_db
+
+- rule: Say ans59 anytime the user says q59
+  steps:
+  - intent: q59
+  - action: action_ans59_db
+
+- rule: Say ans60 anytime the user says q60
+  steps:
+  - intent: q60
+  - action: action_ans60_db
+
+- rule: Say ans61 anytime the user says q61
+  steps:
+  - intent: q61
+  - action: action_ans61_db
+
+- rule: Say ans62 anytime the user says q62
+  steps:
+  - intent: q62
+  - action: action_ans62_db
+
+- rule: Say ans63 anytime the user says q63
+  steps:
+  - intent: q63
+  - action: action_ans63_db
+
+- rule: Say ans64 anytime the user says q64
+  steps:
+  - intent: q64
+  - action: action_ans64_db
+
+- rule: Say ans65 anytime the user says q65
+  steps:
+  - intent: q65
+  - action: action_ans65_db
+
+- rule: Say ans66 anytime the user says q66
+  steps:
+  - intent: q66
+  - action: action_ans66_db
+
+- rule: Say ans67 anytime the user says q67
+  steps:
+  - intent: q67
+  - action: action_ans67_db
+
+- rule: Say ans68 anytime the user says q68
+  steps:
+  - intent: q68
+  - action: action_ans68_db
+
+- rule: Say ans69 anytime the user says q69
+  steps:
+  - intent: q69
+  - action: action_ans69_db
+
+- rule: Say ans70 anytime the user says q70
+  steps:
+  - intent: q70
+  - action: action_ans70_db
+
+- rule: Say ans71 anytime the user says q71
+  steps:
+  - intent: q71
+  - action: action_ans71_db
+
+- rule: Say ans72 anytime the user says q72
+  steps:
+  - intent: q72
+  - action: action_ans72_db
+
+- rule: Say ans73 anytime the user says q73
+  steps:
+  - intent: q73
+  - action: action_ans73_db
+
+- rule: Say ans74 anytime the user says q74
+  steps:
+  - intent: q74
+  - action: action_ans74_db
+
+- rule: Say ans75 anytime the user says q75
+  steps:
+  - intent: q75
+  - action: action_ans75_db
+
+- rule: Say ans76 anytime the user says q76
+  steps:
+  - intent: q76
+  - action: action_ans76_db

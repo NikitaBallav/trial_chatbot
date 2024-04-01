@@ -1,0 +1,184 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - q1
+  - q2
+  - q3
+  - q4
+  - q5
+  - q6
+  - q7
+  - q8
+  - q9
+  - q10
+  - q11
+  - q12
+  - q13
+  - q14
+  - q15
+  - q16
+  - q17
+  - q18
+  - q19
+  - q20
+  - q21
+  - q22
+  - q23
+  - q24
+  - q25
+  - q26
+  - q27
+  - q28
+  - q29
+  - q30
+  - q31
+  - q32
+  - q33
+  - q34
+  - q35
+  - q36
+  - q37
+  - q38
+  - q39
+  - q40
+  - q41
+  - q42
+  - q43
+  - q44
+  - q45
+  - q46
+  - q47
+  - q48
+  - q49
+  - q50
+  - q51
+  - q52
+  - q53
+  - q54
+  - q55
+  - q56
+  - q57
+  - q58
+  - q59
+  - q60
+  - q61
+  - q62
+  - q63
+  - q64
+  - q65
+  - q66
+  - q67
+  - q68
+  - q69
+  - q70
+  - q71
+  - q72
+  - q73
+  - q74
+  - q75
+  - q76
+  - fallback
+
+actions:
+  - action_greet_db
+  - action_happy_db
+  - action_goodbye_db
+  - action_sorry_db
+  - action_ans1_db
+  - action_ans2_db
+  - action_ans3_db
+  - action_ans4_db
+  - action_ans5_db
+  - action_ans6_db
+  - action_ans7_db
+  - action_ans8_db
+  - action_ans9_db
+  - action_ans10_db
+  - action_ans11_db
+  - action_ans12_db
+  - action_ans13_db
+  - action_ans14_db
+  - action_ans15_db
+  - action_ans16_db
+  - action_ans17_db
+  - action_ans18_db
+  - action_ans19_db
+  - action_ans20_db
+  - action_ans21_db
+  - action_ans22_db
+  - action_ans23_db
+  - action_ans24_db
+  - action_ans25_db
+  - action_ans26_db
+  - action_ans27_db
+  - action_ans28_db
+  - action_ans29_db
+  - action_ans30_db
+  - action_ans31_db
+  - action_ans32_db
+  - action_ans33_db
+  - action_ans34_db
+  - action_ans35_db
+  - action_ans36_db
+  - action_ans37_db
+  - action_ans38_db
+  - action_ans39_db
+  - action_ans40_db
+  - action_ans41_db
+  - action_ans42_db
+  - action_ans43_db
+  - action_ans44_db
+  - action_ans45_db
+  - action_ans46_db
+  - action_ans47_db
+  - action_ans48_db
+  - action_ans49_db
+  - action_ans50_db
+  - action_ans51_db
+  - action_ans52_db
+  - action_ans53_db
+  - action_ans54_db
+  - action_ans55_db
+  - action_ans56_db
+  - action_ans57_db
+  - action_ans58_db
+  - action_ans59_db
+  - action_ans60_db
+  - action_ans61_db
+  - action_ans62_db
+  - action_ans63_db
+  - action_ans64_db
+  - action_ans65_db
+  - action_ans66_db
+  - action_ans67_db
+  - action_ans68_db
+  - action_ans69_db
+  - action_ans70_db
+  - action_ans71_db
+  - action_ans72_db
+  - action_ans73_db
+  - action_ans74_db
+  - action_ans75_db
+  - action_ans76_db
+  - utter_iamabot
+  - utter_default
+
+
+responses:
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_default:
+  - text: "Sorry!, I didn't understand, i cant help."
+  
+
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

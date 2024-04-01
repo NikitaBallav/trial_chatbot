@@ -1,0 +1,52 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: action_greet_db
+  - intent: goodbye
+  - action: action_goodbye_db
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: action_greet_db
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: affirm
+  - action: action_happy_db
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: action_greet_db
+  - intent: q10
+  - action: action_ans10_db
+  - intent: deny
+  - action: action_sorry_db
+
+- story: sad path 3
+  steps:
+  - intent: greet
+  - action: action_greet_db
+  - intent: q21  
+  - action: action_ans21_db  
+  - intent: deny
+  - action: action_sorry_db  
+ 
+- story: sad path 4
+  steps:
+  - intent: greet
+  - action: action_greet_db   
+  - intent: q30  
+  - action: action_ans30_db
+  - intent: deny
+  - action: action_sorry_db  
+  
+- story: say goodbye 
+  steps:
+  - intent: goodbye
+  - action: action_goodbye_db  
+  
