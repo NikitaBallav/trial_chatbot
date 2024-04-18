@@ -16,8 +16,8 @@ load_dotenv()
 conn = MySQLdb.connect(
     host=os.environ.get("HOST", "localhost"),
     user=os.environ.get("USER", "root"),
-    passwd=os.environ.get("PASSWORD", "Nikita#23032001"),
-    db=os.environ.get("DATABASE", "engdata"),
+    passwd=os.environ.get("PASSWORD", "XXXXXX032001"),
+    db=os.environ.get("DATABASE", "database_name"),
     ssl_mode='DISABLED'  # Disable SSL certificate validation
 )
 
