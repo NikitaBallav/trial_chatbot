@@ -1,0 +1,386 @@
+version: '3.1'
+nlu:
+- intent: 66q1
+  examples: |
+    -  What is the procedure for determining non-agricultural assessment of lands in non-urban areas according to the Maharashtra Land Revenue Code, 1966?
+- intent: 66q2
+  examples: |
+    -  How does the Collector classify villages in non-urban areas into Class I and Class II based on the market values of lands?
+- intent: 66q3
+  examples: |
+    -  What are the implications for areas of a village or group of villages that have been designated as "urban areas" under the Maharashtra Land Revenue Code (Amendment) Act, 2003?
+- intent: 66q4
+  examples: |
+    -  How does the Collector assess lands categorized as Class I and Class II in non-urban areas for their non-agricultural use?
+- intent: 66q5
+  examples: |
+    -  How does the Collector partition urban areas into blocks for the purpose of non-agricultural assessment?
+- intent: 66q6
+  examples: |
+    -  What is the maximum percentage of the full market value that non-agricultural assessment on lands in each block in an urban area should not exceed?
+- intent: 66q7
+  examples: |
+    -  Who has the authority to determine the standard rate of non-agricultural assessment in urban areas according to the Maharashtra Land Revenue Code, 1966?
+- intent: 66q8
+  examples: |
+    -  How is the full market value of land estimated for the purpose of determining non-agricultural assessment in urban areas?
+- intent: 66q9
+  examples: |
+    -  What regulations govern the determination of the true market value of property for the purpose of non-agricultural assessment in urban areas according to the Maharashtra Land Revenue Code, 1966?
+- intent: 66q10
+  examples: |
+    -  What changes have been made to the Maharashtra Land Revenue Code, 1966 regarding the assessment rates for lands in non-urban and urban areas?
+- intent: 67q1
+  examples: |
+    -  When did the first guaranteed period for the standard rate of non-agricultural assessment commence and expire?
+- intent: 67q2
+  examples: |
+    -  Can the State Government extend the guaranteed period for the standard rate of non-agricultural assessment in urban areas?
+- intent: 67q3
+  examples: |
+    -  What is the maximum limit for the rates of non-agricultural assessment for the guaranteed period commencing from August 1, 2001, in municipal corporation areas and the rest of the State?
+- intent: 67q4
+  examples: |
+    -  When will the standard rate of non-agricultural assessment be deemed due for revision if it was fixed or revised before August 1, 1979?
+- intent: 67q5
+  examples: |
+    -  How often should the standard rate of non-agricultural assessment be revised during a guaranteed period?
+- intent: 67q6
+  examples: |
+    -  What are the provisions for revising the standard rate of non-agricultural assessment at the commencement of the next guaranteed period?
+- intent: 67q7
+  examples: |
+    -  What sub-sections were substituted for the original sub-section (2) by Mah. 8 of 1979?
+- intent: 67q8
+  examples: |
+    -  What proviso was inserted after the existing proviso by Mah. 23 of 1999?
+- intent: 67q9
+  examples: |
+    -  When were the rates of non-agricultural assessment for the guaranteed period of five years commencing from August 1, 2001, specified?
+- intent: 67q10
+  examples: |
+    -  What sub-section was inserted by Mah. 9 of 2002?
+- intent: 68q1
+  examples: |
+    -  What is the Maharashtra Land Revenue Code, 1966 about?
+- intent: 68q2
+  examples: |
+    -  How is the rate of assessment determined for lands used for non-agricultural purposes in urban areas?
+- intent: 68q3
+  examples: |
+    -  What factors are taken into consideration when fixing the non-agricultural assessment rate for lands used for non-agricultural purposes other than residential building, industry, or commerce?
+- intent: 68q4
+  examples: |
+    -  How long does a land need to be used for a non-agricultural purpose for the non-agricultural assessment to be half of the fixed rate?
+- intent: 68q5
+  examples: |
+    -  When does the non-agricultural assessment start being levied on land used for non-agricultural purposes according to the Maharashtra Land Revenue Code, 1966?
+- intent: 68q6
+  examples: |
+    -  What provision does the Maharashtra Land Revenue Code, 1966 have for co-operative societies and housing boards in terms of non-agricultural assessment?
+- intent: 68q7
+  examples: |
+    -  How is the standard rate of non-agricultural assessment fixed or revised according to the Maharashtra Land Revenue Code, 1966?
+- intent: 68q8
+  examples: |
+    -  What is the significance of publishing the standard rate of non-agricultural assessment in the Official Gazette and other prescribed manners before bringing them into force?
+- intent: 69q1
+  examples: |
+    -  What types of lands are exempt from payment of non-agricultural assessment according to the Maharashtra Land Revenue Code, 1966?
+- intent: 69q2
+  examples: |
+    -  How can the State Government revoke the exemption of a land from non-agricultural assessment?
+- intent: 69q3
+  examples: |
+    -  What are the conditions under which agricultural lands in non-urban areas can be exempt from non-agricultural assessment for personal residential purposes?
+- intent: 69q4
+  examples: |
+    -  What actions can lead to a land that was previously exempt from non-agricultural assessment to become liable for payment?
+- intent: 69q5
+  examples: |
+    -  How does the Maharashtra Land Revenue Code, 1966 address the determination and registration of non-agricultural assessment on lands that are wholly exempt from such assessment?
+- intent: 69q6
+  examples: |
+    -  How are non-agricultural assessments fixed on lands in force before the commencement of the Code treated under its provisions?
+- intent: 70q1
+  examples: |
+    -  What is the Maharashtra Land Revenue Code, 1966 Chapter VIII about?
+- intent: 70q2
+  examples: |
+    -  Who has the authority to determine the limits of the sites of villages, towns, and cities under this Chapter?
+- intent: 70q3
+  examples: |
+    -  Under what circumstances is no land revenue levied on lands within the sites of villages, towns, or cities?
+- intent: 70q4
+  examples: |
+    -  How are claims to exemption from land revenue determined under this Chapter?
+- intent: 70q5
+  examples: |
+    -  Which types of lands are exempt from the payment of land revenue according to Section 125 of the Maharashtra Land Revenue Code, 1966?
+- intent: 70q6
+  examples: |
+    -  What provisions apply if the State Government directs a survey of lands within the site of any village, town, or city under this Chapter?
+- intent: 70q7
+  examples: |
+    -  What is the process for conducting a survey of lands other than those used for agricultural purposes within the site of a village, town, or city under this Chapter?
+- intent: 70q8
+  examples: |
+    -  Are there any specific exemptions or regulations for towns or cities with a population of more than two thousand persons in relation to land surveys under this Chapter?
+- intent: 71q1
+  examples: |
+    -  What is the Maharashtra Land Revenue Code, 1966 about?
+- intent: 71q2
+  examples: |
+    -  When is a survey fee charged to holders of building sites in villages, towns, or cities with a population of more than two thousand persons?
+- intent: 71q3
+  examples: |
+    -  How is the amount of survey fee payable regulated according to the Maharashtra Land Revenue Code, 1966?
+- intent: 71q4
+  examples: |
+    -  What is the process for granting a sanad to holders of building sites as specified in the code?
+- intent: 71q5
+  examples: |
+    -  What are the conditions under which duplicate sanads may be granted to holders of building sites?
+- intent: 71q6
+  examples: |
+    -  How are the results of survey operations recorded as per the code?
+- intent: 71q7
+  examples: |
+    -  What is the provision for preparing a map of a village site as per the code?
+- intent: 71q8
+  examples: |
+    -  What are the entitlements of holders of building sites after a survey under section 126 has been completed?
+- intent: 71q9
+  examples: |
+    -  What is the process for obtaining a fresh sanad in case of alterations to a building site holding?
+- intent: 71q10
+  examples: |
+    -  What is the procedure for obtaining a copy of a lost or destroyed sanad as per the code?
+- intent: 72q1
+  examples: |
+    -  According to the Maharashtra Land Revenue Code, how are the boundaries of villages and survey numbers in villages fixed and demarcated?
+- intent: 72q2
+  examples: |
+    -  In which districts of Maharashtra are the boundaries of survey numbers fixed and demarcated by boundary marks as directed by the State Government?
+- intent: 72q3
+  examples: |
+    -  How are disputes regarding village boundaries resolved according to the Code?
+- intent: 72q4
+  examples: |
+    -  What is the procedure for fixing the boundary of a field or holding during a survey if it is disputed or if the holder is not present?
+- intent: 72q5
+  examples: |
+    -  Who has the authority to decide disputes concerning village boundaries or survey numbers that have not been surveyed?
+- intent: 72q6
+  examples: |
+    -  How can a party interested in demarcating the boundaries of a survey number or sub-division apply for demarcation according to the Code?
+- intent: 72q7
+  examples: |
+    -  What rules can the State Government make regarding the demarcation of boundaries of survey numbers or sub-divisions?
+- intent: 72q8
+  examples: |
+    -  How are demarcated survey numbers and sub-divisions treated for the purposes of sections 132, 135, 139, and 140 of the Maharashtra Land Revenue Code?
+- intent: 73q1
+  examples: |
+    -  What is the Maharashtra Land Revenue Code, 1966, and what does it govern?
+- intent: 73q2
+  examples: |
+    -  How can a person regularize or straighten out the boundaries of their fields or holdings in a village according to the code?
+- intent: 73q3
+  examples: |
+    -  What is the process for applying for boundary revision under the Maharashtra Land Revenue Code, 1966?
+- intent: 73q4
+  examples: |
+    -  How does the Survey Officer determine compensation for persons who may suffer loss of land due to boundary revision?
+- intent: 73q5
+  examples: |
+    -  What happens if there is a lack of mutual agreement on the amount of compensation to be paid or recovered by each person concerned?
+- intent: 73q6
+  examples: |
+    -  What is the significance of the decision of the village committee or the committee nominated by the Survey Officer in determining compensation under the code?
+- intent: 73q7
+  examples: |
+    -  How is the boundary deemed to be settled under section 138 of the Maharashtra Land Revenue Code, 1966?
+- intent: 73q8
+  examples: |
+    -  How does the code ensure that the revised boundaries are final and binding on all parties concerned?
+- intent: 73q9
+  examples: |
+    -  What role does the Survey Officer play in the process of boundary revision under the Maharashtra Land Revenue Code, 1966?
+- intent: 73q10
+  examples: |
+    -  How does the code address the issue of boundary disputes and ensure fair compensation for all parties involved?
+- intent: 74q1
+  examples: |
+    -  What is the Maharashtra Land Revenue Code of 1966 and what is its purpose?
+- intent: 74q2
+  examples: |
+    -  What is the effect of the settlement of a boundary under the provisions of Chapter 138 of the Maharashtra Land Revenue Code?
+- intent: 74q3
+  examples: |
+    -  What authority does the Collector have in case a landholder is wrongfully in possession of land after a boundary settlement?
+- intent: 74q4
+  examples: |
+    -  What recourse does a person have if they are wrongfully evicted from land following a boundary settlement?
+- intent: 74q5
+  examples: |
+    -  What role do Survey Officers have in specifying, constructing, and maintaining boundary marks and survey marks according to the Maharashtra Land Revenue Code?
+- intent: 74q6
+  examples: |
+    -  What are the requirements for the construction, layout, maintenance, and repair of boundary marks and survey marks as per the Code?
+- intent: 74q7
+  examples: |
+    -  How can landholders be required to construct, maintain, or repair boundary marks or survey marks on their land according to the Code?
+- intent: 74q8
+  examples: |
+    -  What is the process for appealing or revising an order of ejectment under the Maharashtra Land Revenue Code?
+- intent: 74q9
+  examples: |
+    -  How does the Collector have the authority to redistribute land revenue based on the outcome of an appeal, revision, or civil suit?
+- intent: 74q10
+  examples: |
+    -  What is the significance of boundary marks and survey marks in the context of land ownership and revenue assessment under the Code?
+- intent: 75q1
+  examples: |
+    -  According to the Maharashtra Land Revenue Code, 1966, who is responsible for the maintenance and repair of boundary marks and survey marks of a landholding?
+- intent: 75q2
+  examples: |
+    -  What is the duty of Village Officers and servants in relation to the destruction or unauthorized alteration of village boundary marks or survey marks?
+- intent: 75q3
+  examples: |
+    -  When a survey is introduced into a district, who is responsible for the maintenance and repair of boundary marks and survey marks?
+- intent: 75q4
+  examples: |
+    -  What are the obligations of a landholder adjoining a village road in terms of demarcating and maintaining boundary marks?
+- intent: 75q5
+  examples: |
+    -  What action can the Collector take if a landholder fails to demarcate boundaries or repair boundary marks as required?
+- intent: 75q6
+  examples: |
+    -  How is the term "village road" defined for the purposes of demarcation and maintenance of boundary marks in the Maharashtra Land Revenue Code?
+- intent: 75q7
+  examples: |
+    -  What authority does the Tahsildar have in deciding claims regarding a right of way over boundaries of survey numbers?
+- intent: 75q8
+  examples: |
+    -  What factors does the Tahsildar consider when deciding claims for a right of way over boundaries in accordance with the Code?
+- intent: 75q9
+  examples: |
+    -  What recourse does a person have if they are aggrieved by a decision of the Tahsildar under the provisions of the Code?
+- intent: 75q10
+  examples: |
+    -  In what circumstances is a decision of the Tahsildar regarding a right of way over boundaries not subject to appeal or revision?
+- intent: 76q1
+  examples: |
+    -  What is the duty of the Collector in relation to demarcation of boundaries in areas under town planning schemes or improvement schemes?
+- intent: 76q2
+  examples: |
+    -  What is the penalty for wilfully erasing, removing, or injuring a boundary mark or survey mark?
+- intent: 76q3
+  examples: |
+    -  How can the State Government exempt certain villages or classes of villages from the provisions of Chapter X of the Maharashtra Land Revenue Code, 1966?
+- intent: 76q4
+  examples: |
+    -  What particulars are included in a record of rights maintained in every village?
+- intent: 76q5
+  examples: |
+    -  How should a person report their acquisition of rights as a holder, occupant, owner, mortgagee, landlord, Government lessee, or tenant of land to the Talathi?
+- intent: 77q1
+  examples: |
+    -  What is the Maharashtra Land Revenue Code, 1966 about?
+- intent: 77q2
+  examples: |
+    -  Who is responsible for reporting mutations to the Talathi according to the Code?
+- intent: 77q3
+  examples: |
+    -  Under what circumstances is a person exempt from reporting a right acquired to the Talathi?
+- intent: 77q4
+  examples: |
+    -  What rights are included in the definition mentioned in Explanation I of the Code?
+- intent: 77q5
+  examples: |
+    -  What is the role of the Talathi in registering mutations and disputed cases?
+- intent: 77q6
+  examples: |
+    -  How are objections to entries in the register of mutations handled by the Talathi?
+- intent: 77q7
+  examples: |
+    -  Who is responsible for disposing of disputes entered in the register of disputed cases?
+- intent: 77q8
+  examples: |
+    -  How are entries from the register of mutations transferred to the record of rights according to the Code?
+- intent: 77q9
+  examples: |
+    -  What is the process for transferring entries from the register of mutations to the record of rights?
+- intent: 77q10
+  examples: |
+    -  What is the significance of the Talathi in the implementation of the Maharashtra Land Revenue Code, 1966?
+- intent: 78q1
+  examples: |
+    -  What is the Maharashtra Land Revenue Code of 1966 about?
+- intent: 78q2
+  examples: |
+    -  Who is responsible for certifying entries in the register of mutations?
+- intent: 78q3
+  examples: |
+    -  What is the obligation of a person whose rights, interests, or liabilities are required to be entered in a record or register?
+- intent: 78q4
+  examples: |
+    -  How can a holder of agricultural land obtain a booklet containing a copy of the record of rights pertaining to their land?
+- intent: 78q5
+  examples: |
+    -  What information is included in the booklet provided to holders of agricultural land?
+- intent: 78q6
+  examples: |
+    -  Who can specify the storage device for preparation, maintenance, and updation of all registers and documents under section 148A?
+- intent: 78q7
+  examples: |
+    -  What is the procedure for maintaining a register of tenancies as directed by the State Government?
+- intent: 78q8
+  examples: |
+    -  How are entries in the register of mutations certified?
+- intent: 78q9
+  examples: |
+    -  What is the role of a Revenue Officer or Talathi in the compilation or revision of records or registers?
+- intent: 78q10
+  examples: |
+    -  What fees may be charged for preparing, issuing, and maintaining the booklet containing a copy of the record of rights for agricultural land holders?
+- intent: 79q1
+  examples: |
+    -  What is the Maharashtra Land Revenue Code of 1966?
+- intent: 79q2
+  examples: |
+    -  What is the fine for neglecting to provide information or documents as required by the Code?
+- intent: 79q3
+  examples: |
+    -  How is the information related to the record of rights presumed to be under the Code?
+- intent: 79q4
+  examples: |
+    -  What powers can a Revenue Officer or Talathi exercise for preparing or revising maps or plans under the Code?
+- intent: 79q5
+  examples: |
+    -  How are costs for the preparation or revision of maps or plans assessed and recoverable under the Code?
+- intent: 79q6
+  examples: |
+    -  What is the requirement for notifying the Talathi and Tahsildar when a document related to land is registered under the Indian Registration Act?
+- intent: 79q7
+  examples: |
+    -  Who has the authority to correct clerical errors and errors in the record of rights or registers maintained under the Code?
+- intent: 79q8
+  examples: |
+    -  What additional land records are required to be prepared for each village under the Code?
+- intent: 80q1
+  examples: |
+    -  According to the Maharashtra Land Revenue Code, 1966, what is the presumption regarding entries in the record of rights and register of mutations?
+- intent: 80q2
+  examples: |
+    -  Can a suit be filed against the State Government or any officer of the State Government in relation to claims about entries in records or registers maintained under this Chapter?
+- intent: 80q3
+  examples: |
+    -  What happens to the existing record of rights in force in an area until the record of rights of that area is prepared in accordance with the provisions of the Maharashtra Land Revenue Code, 1966?
+- intent: 80q4
+  examples: |
+    -  What areas in the State are covered by the provisions of sections 161 to 167 of the Maharashtra Land Revenue Code, 1966?
+- intent: 80q5
+  examples: |
+    -  What is a Nistar Patrak and what matters are required to be provided in it according to the Maharashtra Land Revenue Code, 1966?
