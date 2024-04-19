@@ -1,0 +1,1 @@
+After generating question answer pairs from the document, the pairs are saved in csv file, since, manually editing each questions in the nlu.yml of rasa is a tedious task, we have automated the step by converting the csv file into the rasa acceptable nlu format.
