@@ -10,6 +10,8 @@ Before using the chatbot, ensure the following prerequisites are met:
 - Python environment is set up.
 - Rasa is installed using the command: `pip install rasa`.
 - Initialize Rasa project using: `rasa init`.
+- with 'rasa init' the default rasa moodbot will get loaded in your open workspace.
+- after loading the rasa moodbot modify the data folder as per your requirements.
 
 ### 3. Modification:
 
@@ -22,8 +24,12 @@ Before using the chatbot, ensure the following prerequisites are met:
 3. **Custom Actions:**
    - If you have specific actions or functionalities, implement custom actions in the `actions.py` file.
 
+5. **Do the necessary updation for the rest of the files as did in this repo**
+6. **As mention in the action file about the SQL database:**
+   - The responses for the queries in the nlu.yml file are saved in a personal sql database, the database has two columns "response" and "corresponding_intent_name".
+
 4. **Training:**
-   - After making changes, retrain the model using the command: `rasa train`.
+   - After making changes, train the model using the command: `rasa train`.
 
 5. **Testing:**
    - Test the chatbot with sample interactions to ensure it responds appropriately to your customized domain.
